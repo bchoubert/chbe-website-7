@@ -1,0 +1,17 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "package": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "bc-font": "^1.8.1",
+    "css-loader": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.1.2",
+    "webfonts-loader": "^5.1.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

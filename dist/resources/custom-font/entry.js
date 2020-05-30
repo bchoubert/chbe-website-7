@@ -1,0 +1,1 @@
+require('./chbe-font.font');

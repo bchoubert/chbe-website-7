@@ -1,0 +1,11 @@
+doctype html
+html(amp, lang='en')
+  include head.pug
+  body
+    amp-analytics(type='gtag', data-credentials='include')
+      script(type='application/json') { "vars": { "gtag_id": "UA-82368304-1", "config": { "UA-82368304-1": { "groups": "default" } } } }
+    block animations
+    include mixins.pug
+    include nav.pug
+    block content
+    include footer.pug

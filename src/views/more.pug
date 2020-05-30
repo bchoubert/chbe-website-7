@@ -1,0 +1,6 @@
+extends components/layout.pug
+
+block content
+  p More about me!
+  each edu in data.education
+    +education(edu)

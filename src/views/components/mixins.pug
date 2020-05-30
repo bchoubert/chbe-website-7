@@ -1,0 +1,74 @@
+
+mixin project(project)
+  li.project.card.card-half
+    a.item(href=`/pages/${project.key}.html`)
+      .square
+        .square-main(style=`background-color: ${project.color}`)
+          i(class=project.icon)
+      .item-data
+        h2= project.title
+        span= project.description
+      .item-action
+        i.icon.icon-plus
+
+mixin education(edu)
+  .education
+    h2.education-title
+      i(class=edu.icon)
+      span= edu.title
+
+mixin network(network)
+  li.network
+    a(href=network.link, target='_blank')
+      i(class=network.icon)
+
+mixin expertise(expertise)
+  li.expertise-item.card.card-half
+    .item
+      .square
+        .square-main(style=`background-color: ${expertise.color}`)
+          i(class=expertise.icon)
+      .item-data
+        h2= expertise.title
+
+mixin projectDetails(project)
+  .card
+    .card-content
+      span.project.item
+        .square
+          .square-main(style=`background-color: ${project.color}`)
+            i(class=project.icon)
+        .item-data
+          h1= project.title
+          span= project.description
+  .card.project-detail-header
+    .card-content
+      h2 Summary
+      .flex-container
+        .fl1.project-mobile
+          #phone(style=`border-color: ${project.color}`)
+            amp-img.w-100(width=project.mobileProps.width, height=project.mobileProps.height, src=project.mobile, layout='responsive', lightbox)
+        .fl1
+          .my
+            h3 Tags
+            each tag in project.tags
+              span(style=`color: ${project.lighten}`)= ' #'
+              span= tag
+          .my
+            h3 Links
+            each link in project.links
+              a.chip(href=link.link, target='_blank')
+                i(class=link.icon, style=`color: ${project.lighten}`)
+                span= link.title
+          .my
+            h3 Technologies
+            each tech in project.technologies
+              span.chip
+                i(class=tech.icon, style=`color: ${project.lighten}`)
+                span= tech.title
+  each projectDetail in project.details
+    .card
+      .card-content
+        h2= projectDetail.title
+        .project-detail !{projectDetail.content}
+  

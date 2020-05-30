@@ -1,0 +1,15 @@
+{
+  "name": "CHBE.fr",
+  "short_name": "CHBE.fr",
+  "theme_color": "#252525",
+  "background_color": "#252525",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "sizes": "512x512"
+    }
+  ]
+}

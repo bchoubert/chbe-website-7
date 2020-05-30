@@ -1,0 +1,442 @@
+:root {
+  --text: #E4E4E4;
+  --theme: #181818;
+  --theme-light: #232323;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background-color: var(--theme);
+  padding: 2rem;
+  display: block;
+  font-weight: 200;
+}
+
+img, amp-img {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  
+  &.w-100 {
+    min-height: 200px;
+    min-width: 200px;
+  }
+
+  &[lightbox] {
+    cursor: pointer;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 100;
+}
+
+h1, h2 {
+  margin-bottom: .5em;
+}
+
+.content {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap-container {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fl1 {
+  flex: 1;
+}
+
+.flb50 {
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.my {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.py {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.sub {
+  font-size: 90%;
+  font-style: italic;
+}
+
+.ssub {
+  font-size: 85%;
+  font-style: italic;
+}
+
+.d-block {
+  display: block;
+}
+
+.indicator {
+  height: 2.5rem;
+  width: 2.5rem;
+  flex: 0 0 2.5rem;
+  margin-right: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--theme);
+
+  &-white {
+    background-color: #FFFFFF;
+  }
+
+  &-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    & > div {
+      flex: 1;
+    }
+  }
+
+  &-big.indicator {
+    height: 5rem;
+    width: 5rem;
+    flex: 0 0 5rem;
+
+    img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  .icon {
+    font-size: 120%;
+  }
+
+  img, amp-img {
+    height: 1.8rem;
+    display: block;
+    width: 1.8rem;
+    border-radius: 0;
+    object-fit: cover;
+  }
+}
+
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-light);
+
+  &-content {
+    padding: 2rem;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  &-half {
+    width: calc(50% - .5rem);
+
+    &-list {
+      display: flex;
+      flex-flow: wrap;
+      margin-top: -2rem;
+
+      .card {
+        margin-top: 2rem;
+
+        &:nth-child(2n) {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  & + .card {
+    margin-top: 2rem;
+  }
+}
+
+.container {
+  padding: 1rem;
+}
+
+.icon, .icon:before {
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a, a:hover, a:focus, a:active, a:visited, a:link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav.card, footer.card {
+  height: 4rem;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  font-size: 120%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li a {
+      height: 1rem;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+
+  h1, h2 {
+    margin-bottom: 0;
+  }
+
+  .square {
+    flex: 0 0 5rem;
+  }
+
+  &-data {
+    margin: 0 1rem;
+    flex: 5;
+  }
+
+  &-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 5 1rem;
+  }
+}
+
+.square {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  position: relative;
+  margin: 1rem 0 .5rem 0;
+
+  &-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 4rem;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--text);
+  }
+}
+
+header .card-content:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  i {
+    font-size: 300%;
+    padding-right: 2rem;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.project {
+
+  &-mobile {
+    margin: 5rem 2rem 5rem 0;
+    max-width: 25rem;
+    display: block;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000;
+  
+    #phone {
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid transparent;
+      outline: 1px solid transparent;
+      transform: translateZ(0) rotateY(20deg);
+      transform-origin: 50% 75%;
+      background-color: #FFFFFF;
+  
+      amp-img {
+        transition: transform .5s;
+      }
+    }
+  }
+
+  &-detail {
+    display: block;
+
+    &-header {
+
+      .chip {
+        margin-right: 1rem;
+        white-space: nowrap;
+  
+        i {
+          display: inline-block;
+          padding: 0 .5rem;
+        }
+      }
+
+      a, a:hover, a:focus, a:visited, a:link, a:active {
+        text-decoration: underline;
+      }
+    }
+  
+    amp-img.fl1 {
+      margin: 0 auto;
+      max-width: 50%;
+    }
+  
+    ul {
+      list-style-type: square;
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+
+    &-half {
+      width: 100%;
+
+      &-list {
+
+        .card {
+
+          &:nth-child(2n) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: .5rem;
+  }
+
+  .project {
+
+    &-mobile {
+      margin: 0;
+      max-width: 100%;
+  
+      #phone {
+        transform: rotateX(0deg);
+      }
+    }
+
+    &-detail amp-img.fl1 {
+      max-width: 100%;
+    }
+  }
+
+  .card {
+
+    &-content {
+      padding: .5rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .project-detail {
+    flex-direction: row;
+  }
+
+  .flb50 { width: 50%; }
+}
+

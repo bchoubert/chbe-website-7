@@ -1,0 +1,27 @@
+{
+  "name": "chbe-website-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node src/index.js BUILD",
+    "copy": "node src/index.js COPY"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bchoubert/chbe-website-7.git"
+  },
+  "author": "Bertrand CHOUBERT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bchoubert/chbe-website-7/issues"
+  },
+  "homepage": "https://github.com/bchoubert/chbe-website-7#readme",
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "pug": "^3.0.0"
+  },
+  "dependencies": {
+    "bc-font": "^1.8.2"
+  }
+}
