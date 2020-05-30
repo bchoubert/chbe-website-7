@@ -26,7 +26,8 @@ img.w-100, amp-img.w-100 {
 }
 
 img[lightbox], amp-img[lightbox] {
-  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 ul {
@@ -40,8 +41,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin-bottom: .5em;
+  font-weight: 300;
 }
 
 .content {

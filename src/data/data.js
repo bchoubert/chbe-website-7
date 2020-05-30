@@ -684,6 +684,10 @@ const data = {
       key: 'CV',
       title: 'Crypto Viewer',
       description: 'Mobile App to track crypto-currencies & your assets',
+      fullDescription: `<span>
+        Crypto-Viewer is a utility app to track your favourite crypto-currencies. It's fast, secure, customizable...<br/>
+        By adding your current assets, you can track your wallet value at everytime. You have also access to a pratcical set of tools to watch for current and past values of a crypto-currency.
+      </span>`,
       wip: false,
       icon: 'icon icon-crypto-viewer',
       color: '#1543E4',
@@ -936,6 +940,11 @@ const data = {
       key: 'AD',
       title: 'Air-Data',
       description: 'Airlines Data Viewer with 800+ companies and 10,000+ routes',
+      fullDescription: `<span>
+        Air-Data is a one-of-a-kind project.<br/>
+        By computing data from different databases accross OpenAPI and Open-Source data, it records more than 10,000 routes and 800 companies from 2015.<br/>
+        Air-Data is a convenient way to have a global look and understanding of worldwide air-related data, all along with every airport, airline, and operated flights for each airline.
+      </span>`,
       wip: false,
       icon: 'icon icon-air-data',
       color: '#FF4500',
@@ -1192,6 +1201,11 @@ const data = {
       key: 'BCF',
       title: 'BC-Font',
       description: 'The Developer Font with 1,000+ icons',
+      fullDescription: `<span>
+        BC-Font is an easy-to-use, high-quality and more globally a must-have font for IT workers, specially developers.<br/>
+        With more than 1,000 icons separated into 27 categories, this product is available for every use: Desktop font, Web, Print, Design...<br/>
+        This font comes with a handy website that permits you to find the ideal icons for your project.
+      </span>`,
       wip: false,
       icon: 'icon icon-bcfont-alt',
       color: '#EA2834',
@@ -1465,6 +1479,11 @@ const data = {
       key: 'VV',
       title: 'Velo\'v',
       description: 'Deep analysis of French renting bike company',
+      fullDescription: `<span>
+        This website presents both an advanced real-time analysis and a business intelligence analysis of the Velo'v bike-sharing network.<br/>
+        Using your phone, you can locate easily the nearest station to take your bike from, or the nearest station to let your bike.<br/>
+        You can see all the stations status and district stats at a glance, as well as the high-fidelity results of the Business Intelligence analysis.
+      </span>`,
       wip: false,
       icon: 'icon icon-velov',
       color: '#BF1410',
@@ -1866,6 +1885,10 @@ const data = {
       key: 'ZB',
       title: 'Zest Bank',
       description: 'Refreshing Online Bank Concept',
+      fullDescription: `<span>
+        ZestBank is a branding concept of the modern bank, according to me.<br/>
+        Managing your services, cards and funds online or via the app, and choose your ZestCard from the three plans.
+      </span>`,
       wip: false,
       icon: 'icon icon-zestbank',
       color: '#F87C00',
@@ -1992,6 +2015,11 @@ const data = {
       key: 'NDG',
       title: 'Nescafe Dolce Gusto Webstore',
       description: 'E-commerce website to order your coffee pods & machines',
+      fullDescription: `<span>
+        Reinventing the e-commerce coffee experience.<br/>
+        This website offers tons of cofee varieties as well as coffee machines.<br/>
+        It presents also the Nescafe-style coffee grinding.
+      </span>`,
       wip: false,
       icon: 'icon icon-dolcegusto-alt2',
       color: '#653800',
@@ -2293,6 +2321,11 @@ const data = {
       key: 'LO',
       title: 'LogTrack',
       description: 'Complex Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...',
+      fullDescription: `<span>
+        Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>
+        Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>
+        Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.
+      </span>`,
       wip: true,
       icon: 'icon icon-logtrack',
       color: '#113885',

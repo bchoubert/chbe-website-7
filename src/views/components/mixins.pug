@@ -50,6 +50,9 @@ mixin projectDetails(project)
             amp-img.w-100(width=project.mobileProps.width, height=project.mobileProps.height, src=project.mobile, layout='responsive', lightbox)
         .fl1
           .my
+            h3 Description
+            span !{project.fullDescription}
+          .my
             h3 Tags
             each tag in project.tags
               span(style=`color: ${project.lighten}`)= ' #'
