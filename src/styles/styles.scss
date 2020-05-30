@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--text);
   background-color: var(--theme);
-  padding: 2rem;
+  padding: 0 2rem;
   display: block;
   font-weight: 200;
 }
@@ -235,18 +235,41 @@ nav.card, footer.card {
   justify-content: space-between;
 }
 
-nav {
-  font-size: 120%;
+.nav {
 
-  ul {
-    display: flex;
-    flex-direction: row;
+  &-placeholder {
+    display: block;
+    width: 100%;
+    height: 8rem;
+  }
 
-    li a {
-      height: 1rem;
-      margin-left: 1.5rem;
+  &-container {
+    width: calc(100% - 4rem);
+    padding: 2rem 0 1rem 0;
+    background-color: var(--theme);
+    display: block;
+    position: fixed;
+    margin-bottom: 1rem;
+    z-index: 3;
+  
+    nav {
+      font-size: 120%;
+    
+      ul {
+        display: flex;
+        flex-direction: row;
+    
+        li a {
+          height: 1rem;
+          margin-left: 1.5rem;
+        }
+      }
     }
   }
+}
+
+footer {
+  margin-bottom: 2rem;
 }
 
 .item {
@@ -401,7 +424,13 @@ header .card-content:first-child {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: .5rem;
+    padding: 0 .5rem;
+  }
+
+  .nav {
+    &-container {
+      width: calc(100% - 1rem);
+    }
   }
 
   .project {

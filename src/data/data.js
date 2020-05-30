@@ -695,7 +695,7 @@ const data = {
       darken: '#0c2887',
       mobile: '/resources/img/projects/CV/mobile.png',
       mobileProps: { height: 1140, width: 540 },
-      tags: ['Crypto Currencies', 'Mobile App', 'UI'],
+      tags: ['Crypto_Currencies', 'Mobile_App', 'UI'],
       dribbbleProject: 1948460,
       links: [
         {
@@ -952,7 +952,7 @@ const data = {
       darken: '#992900',
       mobile: '/resources/img/projects/AD/mobile.png',
       mobileProps: { width: 540, height: 1140 },
-      tags: ['Map', 'Analysis', 'Tile Layers'],
+      tags: ['Map', 'Analysis', 'Tile_Layers'],
       dribbbleProject: 2015636,
       links: [
         {
@@ -1213,7 +1213,7 @@ const data = {
       darken: '#9d0f18',
       mobile: '/resources/img/projects/BCF/mobile.png',
       mobileProps: { width: 540, height: 1140 },
-      tags: ['Icon Font', 'Automatic Build'],
+      tags: ['Icon_Font', 'Automatic_Build'],
       dribbbleProject: 1948450,
       links: [
         {
@@ -1491,7 +1491,7 @@ const data = {
       darken: '#610a08',
       mobile: '/resources/img/projects/VV/mobile.png',
       mobileProps: { width: 540, height: 1140 },
-      tags: ['Business Intelligence', 'Map', 'Real-Time'],
+      tags: ['Business_Intelligence', 'Map', 'Real-Time'],
       dribbbleProject: 1984459,
       links: [
         {

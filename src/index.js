@@ -7,7 +7,7 @@ const pug = require('pug'),
   process = require('process');
 
 const SRC_FOLDER = 'src/', OUTPUT_FOLDER = 'dist/';
-const PAGES_TO_COMPILE = ['index', 'test'];
+const PAGES_TO_COMPILE = ['index', 'more'];
 
 const errorHandler = console.error;
 
