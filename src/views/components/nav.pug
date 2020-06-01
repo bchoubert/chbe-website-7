@@ -1,7 +1,11 @@
 .nav-container
   nav.card
-    a(href='/')
-      i(class=data.profile.icon)
+    block navLink
+      a.nav-link(href='/')
+        i.icon.icon-chevron-left
+    .nav-title
+      block pageTitle
+        span Bertrand Choubert's Portfolio
     ul
       each network in data.networks
         +network(network)

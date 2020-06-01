@@ -12,13 +12,31 @@ mixin project(project)
         i.icon.icon-plus
 
 mixin education(edu)
-  .education
-    h2.education-title
-      i(class=edu.icon)
-      span= edu.title
+  li.education.card.card-half
+    .item
+      .square
+        .square-main(style=`background-color: ${edu.color}`)
+          i(class=edu.icon)
+      .item-data
+        h2= edu.title
+        .edu-details
+          span= edu.school + ' - ' + edu.dates.yEnd + ' - ' + edu.location
+        .edu-desc.ssub
+          span= edu.description
+
+mixin certification(cert)
+  li.certification.card.card-half
+    .item
+      .square
+        .square-main(style=`background-color: ${cert.color}`)
+          i(class=cert.icon)
+      .item-data
+        h2= cert.title
+        .cert-details
+          span= cert.organism
 
 mixin network(network)
-  li.network
+  li.nav-link
     a(href=network.link, target='_blank')
       i(class=network.icon)
 
@@ -33,10 +51,10 @@ mixin expertise(expertise)
 
 mixin projectDetails(project)
   .card
-    .card-content
+    .card-content(style=`background-image: linear-gradient(135deg, ${project.color} 60%, ${project.lighten})`)
       span.project.item
         .square
-          .square-main(style=`background-color: ${project.color}`)
+          .square-main(style=`background-color: var(--theme)`)
             i(class=project.icon)
         .item-data
           h1= project.title
@@ -74,4 +92,3 @@ mixin projectDetails(project)
       .card-content
         h2= projectDetail.title
         .project-detail !{projectDetail.content}
-  

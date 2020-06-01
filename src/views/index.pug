@@ -1,15 +1,25 @@
 extends components/layout.pug
 
+block navLink
+  a.nav-link(href='/')
+    i(class=data.profile.icon)
+
 block content
+  .card.card-bg
+    .card-content
+      h1 Give your company the website it deserves.
+      h3 I'm here to bring tangible, smart and creative web solutions.
   header.card
     .card-content
       i.icon.icon-bc
-      p= data.profile.resume
+      p= data.profile.headline
     .card-content
       h1 Expertise
       ul.card-half-list
         each expertise in data.expertise
           +expertise(expertise)
+      .btn-container
+        a.btn(href='/more.html') More about me
   .projects.card
     .card-content
       h1 Products &amp; Projects

@@ -1,6 +1,19 @@
 extends components/layout.pug
 
 block content
-  p More about me!
-  each edu in data.education
-    +education(edu)
+  .card
+    .card-content
+      h1 Summary
+      p= data.profile.resume
+  .card
+    .card-content
+      h1 Education
+      ul.card-half-list
+        each edu in data.education
+          +education(edu)
+  .card
+    .card-content
+      h1 Certifications
+      ul.card-half-list
+        each cert in data.certifications
+          +certification(cert)
