@@ -187,6 +187,46 @@ h1, h2, h3 {
   }
 }
 
+.shot {
+  width: calc(50% - .5rem);
+  float: left;
+  margin-bottom: 1.5rem;
+
+  &:nth-child(2n) {
+    margin-left: 1rem;
+  }
+
+  span {
+    height: 1.2rem;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+amp-list {
+  &.with-custom-loader .amp-active {
+    width: 2em;
+    height: 2em;
+    background-color: var(--text);
+  
+    margin: 0 auto;
+    animation: list-loader 1.2s infinite ease-in-out;
+
+    & > div {
+      display: none;
+    }
+  }
+}
+
+@keyframes list-loader {
+  0% { transform: perspective(120px); }
+  50% { transform: perspective(120px) rotateX(-180deg); }
+  100% { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+}
 
 .card {
   box-sizing: border-box;
@@ -484,6 +524,14 @@ header .card-content:first-child {
       display: none;
     }
   }
+
+  
+  .shot {
+    width: 100%;
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
   }
 
   .project {

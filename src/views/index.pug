@@ -26,3 +26,8 @@ block content
       ul.card-half-list
         each project in data.projects
           +project(project)
+  .shots.card
+    .card-content
+      h1 Last Shots
+      amp-list.with-custom-loader(width='auto', items='.', height= '100', layout='fixed-height', reset-on-refresh, binding='no', src='https://api.dribbble.com/v2/user/shots?access_token=3b674db39de5dba6b392837b2ab586170326d8c3b8a626bb97388ba67fd90158')
+        +shot()

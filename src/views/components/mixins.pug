@@ -1,4 +1,10 @@
 
+mixin shot()
+  template(type='amp-mustache')
+    .shot
+      amp-img(src='{{ images.hidpi }}', width='400', height='300', layout='responsive')
+      span {{title}}
+
 mixin project(project)
   li.project.card.card-half
     a.item(href=`/pages/${project.key}.html`)
