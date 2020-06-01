@@ -2,7 +2,7 @@
 const data = {
   profile: {
     name: 'Bertrand Choubert',
-    headline: 'Web Developer that felt in love with UI Design',
+    headline: 'Hi! I\'m Bertrand Choubert, a Web Developer that felt in love with UI Design.',
     copywrite: 'Building delightful experiences',
     icon: 'icon icon-bc',
     resume: `Design, development, management and organization, that is my definition of IT.
@@ -16,46 +16,65 @@ const data = {
       color: '#F5CD0E',
       icon: 'icon icon-qwiklabs',
       organism: 'Qwiklabs / Google',
-      title: 'AWS & GCP trainings'
+      title: 'AWS & GCP trainings',
+      links: [
+        {
+          title: 'Profile',
+          link: 'https://www.qwiklabs.com/public_profiles/476a6209-8ca5-4262-8458-7e0885bd45bd'
+        }
+      ]
+    },
+    {
+      color: '#007BB6',
+      icon: 'icon icon-linkedin-alt',
+      organism: 'LinkedIn Learning',
+      links: []
     },
     {
       color: '#4CAF50',
       icon: 'icon icon-google',
       organism: 'Google',
-      title: 'Digital Active'
+      title: 'Digital Active',
+      links: []
     },
     {
       color: '#004079',
       icon: 'icon icon-cci',
       organism: 'CCI Lyon',
-      title: 'Pass Entrepreneurs'
+      title: 'Pass Entrepreneurs',
+      links: []
     },
     {
       color: '#FE541C',
       icon: 'icon icon-socialmediapro-alt2',
       organism: 'Social Media Pro',
-      title: 'Digital Marketing & SEO'
+      title: 'Digital Marketing & SEO',
+      links: []
     },
     {
       color: '#F7C948',
       icon: 'icon icon-livementor-alt2',
       organism: 'LiveMentor',
-      title: 'Digital Marketing'
+      title: 'Digital Marketing',
+      links: []
     },
     {
       color: '#EA5252',
       icon: 'icon icon-udemy',
-      organism: 'uDemy'
+      organism: 'uDemy',
+      links: []
     },
     {
       color: '#81BC06',
       icon: 'icon icon-microsoft',
-      organism: 'Microsoft Learn / MVA'
+      organism: 'Microsoft Learn / MVA',
+      links: []
     },
     {
       color: '#EB394F',
       icon: 'icon icon-pluralsight',
-      organism: 'PluralSight / CodeSchool'
+      organism: 'PluralSight / CodeSchool',
+      links: []
     }
   ],
   education: [
@@ -2412,7 +2431,7 @@ const data = {
           </div>
           <div class="flex-container my">
             <div class="content center-content my">
-              <i class="icon icon-logtrack" style="color: #E4E4E4; font-size: 20rem"></i>
+              <i class="icon icon-logtrack" style="color: #E4E4E4; font-size: 10rem"></i>
               <span class="my">Simplified Logo</span>
             </div>
             <div class="content center-content my">
