@@ -1,7 +1,7 @@
 
 mixin shot()
   template(type='amp-mustache')
-    .shot
+    a.shot(href='{{ html_url }}', target='_blank')
       amp-img(src='{{ images.hidpi }}', width='400', height='300', layout='responsive')
       span {{title}}
 

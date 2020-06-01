@@ -334,6 +334,10 @@ amp-list.with-custom-loader .amp-active > div {
   display: inline;
 }
 
+.card-bg .clearfix {
+  display: block;
+}
+
 .card-bg h3 {
   background-color: var(--text);
   color: var(--theme-light);
