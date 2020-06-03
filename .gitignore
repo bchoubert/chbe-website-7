@@ -1,1 +1,3 @@
 **/node_modules/**/*
+src/resources/php/params.inc.php
+dist/resources/php/params.inc.php

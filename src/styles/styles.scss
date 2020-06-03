@@ -29,6 +29,7 @@ img, amp-img {
 }
 
 .btn {
+  cursor: pointer;
 
   &, &:hover, &:active, &:visited, &:focus, &:link {
     padding: .5rem 1rem;
@@ -37,6 +38,7 @@ img, amp-img {
     text-transform: uppercase;
     background-color: var(--text);
     font-weight: 400;
+    border: 2px solid var(--text);
   }
 
   &-container {
@@ -44,6 +46,17 @@ img, amp-img {
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
+  }
+
+  &-secondary {
+    &, &:hover, &:active, &:visited, &:focus, &:link {
+      background-color: transparent;
+      color: var(--text);
+    }
+  }
+
+  & + .btn {
+    margin-left: 1rem;
   }
 }
 
@@ -59,7 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  margin-bottom: .5em;
+  &:not(:first-child) {
+    margin-top: .5em;
+  }
 }
 
 .content {
@@ -130,7 +145,7 @@ h1, h2, h3 {
 }
 
 .ssub {
-  font-size: 85%;
+  font-size: 80%;
   font-style: italic;
 }
 
@@ -190,24 +205,39 @@ h1, h2, h3 {
 .shot {
   width: calc(50% - .5rem);
   float: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   &:nth-child(2n) {
     margin-left: 1rem;
   }
 
+  amp-img {
+    flex: 0 0 160px;
+  }
+
   span {
-    height: 1.2rem;
-    width: 100%;
+    height: 1.5rem;
     display: block;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    flex: 1;
+    padding-left: 1rem;
   }
 }
 
+ul.tasks {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
 amp-list {
+  margin-top: .5rem;
+
   &.with-custom-loader .amp-active {
     width: 2em;
     height: 2em;
@@ -276,7 +306,7 @@ amp-list {
     &-list {
       display: flex;
       flex-flow: wrap;
-      margin-top: -2rem;
+      margin-top: -1.5rem;
 
       .card {
         margin-top: 2rem;
@@ -326,11 +356,17 @@ nav.card, footer.card {
   &-link {
     height: 4rem;
     min-width: 4rem;
-    box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0 .5rem;
+
+    a {
+      height: 100%;
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &-placeholder {
@@ -369,6 +405,10 @@ footer {
   flex-direction: row;
   align-items: center;
   flex: 1;
+
+  &-top {
+    align-items: flex-start;
+  }
 
   h1, h2 {
     margin-bottom: 0;
@@ -467,17 +507,6 @@ header .card-content:first-child {
     display: block;
 
     &-header {
-
-      .chip {
-        margin-right: 1rem;
-        white-space: nowrap;
-  
-        i {
-          display: inline-block;
-          padding: 0 .5rem;
-        }
-      }
-
       a, a:hover, a:focus, a:visited, a:link, a:active {
         text-decoration: underline;
       }
@@ -495,7 +524,134 @@ header .card-content:first-child {
   }
 }
 
-@media screen and (max-width: 850px) {
+.chip {
+  margin-right: 1rem;
+  white-space: nowrap;
+  background-color: var(--theme);
+  padding: .2rem .5rem;
+  border-radius: 2px;
+  font-size: 85%;
+  margin-top: .5rem;
+  display: inline-block;
+
+  i {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: .5rem;
+    }
+
+    &:last-child {
+      margin-left: .5rem;
+    }
+  }
+}
+
+form {
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #token-container {
+    display: block;
+    overflow: hidden;
+    max-height: 1px;
+  }
+
+  .form-message {
+    margin: .5rem 0;
+    font-size: 120%;
+    text-align: center;
+
+    &--error .chip {
+      background-color: #FF7777;
+    }
+
+    &--success .chip {
+      background-color: #44AA44;
+    }
+  }
+
+  .input, .textarea {
+    &-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        resize: none;
+      }
+    }
+  }
+
+  .input {
+    &-container {
+      position: relative;
+      padding-top: 1.5rem;
+
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: top .5s, color .5s, left .5s;;
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+
+      &:last-child {
+        margin-left: 1rem;
+      }
+
+      input:invalid:not(:focus) {
+        & + label {
+          top: 1.9rem;
+          left: 1rem;
+          color: var(--theme);
+        }
+      }
+    }
+
+    &-line {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .textarea-container {
+    margin-top: .5rem;
+    position: relative;
+    padding-top: 1.5rem;
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: top .5s, color .5s, left .5s;;
+    }
+
+    textarea:invalid:not(:focus) {
+      & + label {
+        top: 1.9rem;
+        left: 1rem;
+        color: var(--theme);
+      }
+    }
+  }
+
+  input#email, input#name, textarea {
+    border-radius: 2px;
+    flex: 1;
+    padding: .5rem;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .card {
 
     &-half {
@@ -512,11 +668,45 @@ header .card-content:first-child {
       }
     }
   }
+  
+  .shot {
+    width: 100%;
+    margin-bottom: 10px;
+
+    amp-img {
+      flex: 0 0 80px;
+      max-height: 60px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 699px) {
   body {
     padding: 0 .5rem;
+  }
+
+  form {
+    .input {
+      &-line {
+        flex-direction: column;
+      }
+
+      &-container {
+
+        &:first-child, &:last-child {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        & + .input-container {
+          margin-top: .5rem;
+        }
+      }
+    }
   }
 
   .nav {
@@ -526,15 +716,6 @@ header .card-content:first-child {
 
     &-title {
       display: none;
-    }
-  }
-
-  
-  .shot {
-    width: 100%;
-
-    &:nth-child(2n) {
-      margin-left: 0;
     }
   }
 
@@ -564,6 +745,25 @@ header .card-content:first-child {
 
     &-content {
       padding: .5rem;
+    }
+  }
+
+  .square,
+  .item .square {
+    height: 3rem;
+    width: 3rem;
+    flex: 0 0 3rem;
+    margin: .5rem 0 .2rem 0;
+  
+    &-main {
+      height: 2.5rem;
+      width: 2.5rem;
+      font-size: 130%;
+    }
+  
+    &:before {
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }

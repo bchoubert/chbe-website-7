@@ -15,12 +15,13 @@ block content
       i.icon.icon-bc
       p= data.profile.headline
     .card-content
-      h1 Expertise
+      h1 Services
       ul.card-half-list
-        each expertise in data.expertise
-          +expertise(expertise)
+        each service in data.services
+          +service(service)
       .btn-container
         a.btn(href='/more.html') More about me
+        a.btn.btn-secondary(href='/resources/Resume_Bertrand_Choubert.pdf', target='_blank') Download Resume
   .projects.card
     .card-content
       h1 Products &amp; Projects
@@ -30,5 +31,31 @@ block content
   .shots.card
     .card-content
       h1 Last Shots
-      amp-list.with-custom-loader(width='auto', items='.', height= '100', layout='fixed-height', reset-on-refresh, binding='no', src='https://api.dribbble.com/v2/user/shots?access_token=3b674db39de5dba6b392837b2ab586170326d8c3b8a626bb97388ba67fd90158')
+      amp-list.with-custom-loader(width='auto', items='.', height= '840', layout='fixed-height', reset-on-refresh, binding='no', src='https://api.dribbble.com/v2/user/shots?access_token=3b674db39de5dba6b392837b2ab586170326d8c3b8a626bb97388ba67fd90158')
         +shot()
+  .card
+    .card-content
+      h1 Contact Me
+      form#contact-form(method='POST', action-xhr='/resources/php/send.php', target='_top', on="submit-success:AMP.setState({form: 'sent'})")
+        fieldset('[hidden]'="!!form")
+          .input-line
+            .input-container
+              input(id='name', type='text', name='name', required)
+              label(for='name') Your Name
+            .input-container
+              input(id='email', type='email', name='email', required)
+              label(for='email') Your Email Address
+          .textarea-container
+            textarea(id='message', required, rows='8', name='message')
+            label(for='Message') Your Message
+          amp-list#token-container(width='500', items='.', single-item, height='500', reset-on-refresh, binding='no', src='/resources/php/send.php')
+            template(type='amp-mustache')
+              input(type='hidden', name='check', value='{{message}}')
+          .btn-container
+            input.btn(type='submit', value='Send Message')
+        div.form-message.form-message--success(submit-success)
+          template(type='amp-mustache') 
+            span.chip Message sent!
+        div.form-message.form-message--error(submit-error)
+          template(type='amp-mustache')
+            span.chip {{{ message }}}

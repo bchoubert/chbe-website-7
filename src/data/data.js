@@ -11,6 +11,59 @@ const data = {
     
         Passionate about IT, but also aeronautics and music creation, I am interested in innovation in multiple fields, which permits me to learn new things about them!`
   },
+  tongues: [
+    {
+      title: 'French',
+      flag: {
+        w400: '/resources/img/flags/fr.png',
+        w150: '/resources/img/flags/fr-sm.png'
+      },
+      level: 'Mother Tongue',
+      certificates: [
+        {
+          title: 'Voltaire Orthographic Certification',
+          link: 'https://drive.google.com/file/d/1Ur4Gmb3nP9a78w-Z4TGqgM461qhKSm2P/view?usp=sharing'
+        }
+      ]
+    },
+    {
+      title: 'English',
+      flag: {
+        w400: '/resources/img/flags/en.png',
+        w150: '/resources/img/flags/en-sm.png'
+      },
+      level: 'Full & Professional Proficiency',
+      certificates: [
+        {
+          title: 'EFSET 73/100 - C2',
+          link: 'https://drive.google.com/file/d/1XZNhu7j6w2Zok4WMqduOZywACJnZQN0m/view?usp=sharing'
+        },
+        {
+          title: 'TOEIC 910/990',
+          link: 'https://drive.google.com/file/d/1hAQzvt0h7vlE46HwbbIOny4TqTfqa1wK/view?usp=sharing'
+        },
+        {
+          title: 'EF Level 13',
+          link: 'https://drive.google.com/file/d/1oNL7U_cy3RXjx1PWWCyGD5IDHHKxfP-3/view?usp=sharing'
+        },
+        {
+          title: 'TOEIC 820/990',
+          link: 'https://drive.google.com/file/d/1b_uV3kucK7HVcc5eGZ-Oubrp1OE5sUpN/view?usp=sharing'
+        }
+      ]
+    },
+    {
+      title: 'Italian',
+      flag: {
+        w400: '/resources/img/flags/it.png',
+        w150: '/resources/img/flags/it-sm.png'
+      },
+      level: 'Low Proficiency',
+      certificates: [
+
+      ]
+    }
+  ],
   certifications: [
     {
       color: '#F5CD0E',
@@ -21,6 +74,46 @@ const data = {
         {
           title: 'Profile',
           link: 'https://www.qwiklabs.com/public_profiles/476a6209-8ca5-4262-8458-7e0885bd45bd'
+        },
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/1PPYLSIuWmdaNvSQJjl-6CWWj58lRML28?usp=sharing'
+        }
+      ]
+    },
+    {
+      color: '#4CAF50',
+      icon: 'icon icon-google',
+      organism: 'Google',
+      title: 'Digital Active',
+      links: [
+        {
+          title: 'Certificate',
+          link: 'https://drive.google.com/drive/folders/1xSwFfMiSSnX22DUM402W-4FgpFuGvOU3?usp=sharing'
+        }
+      ]
+    },
+    {
+      color: '#004079',
+      icon: 'icon icon-cci',
+      organism: 'CCI Lyon',
+      title: 'Pass Entrepreneurs',
+      links: [
+        {
+          title: 'Certificate',
+          link: 'https://drive.google.com/drive/folders/1y35uXZixQ9xrrQM-ZjGw9tcYmJAYkjsU?usp=sharing'
+        }
+      ]
+    },
+    {
+      color: '#F7C948',
+      icon: 'icon icon-livementor-alt2',
+      organism: 'LiveMentor',
+      title: 'Digital Marketing',
+      links: [
+        {
+          title: 'Certificate',
+          link: 'https://drive.google.com/drive/folders/1R9HH5Et_4jIJ98Q0zcg75WSie24Wd4qX?usp=sharing'
         }
       ]
     },
@@ -28,53 +121,38 @@ const data = {
       color: '#007BB6',
       icon: 'icon icon-linkedin-alt',
       organism: 'LinkedIn Learning',
-      links: []
-    },
-    {
-      color: '#4CAF50',
-      icon: 'icon icon-google',
-      organism: 'Google',
-      title: 'Digital Active',
-      links: []
-    },
-    {
-      color: '#004079',
-      icon: 'icon icon-cci',
-      organism: 'CCI Lyon',
-      title: 'Pass Entrepreneurs',
-      links: []
-    },
-    {
-      color: '#FE541C',
-      icon: 'icon icon-socialmediapro-alt2',
-      organism: 'Social Media Pro',
-      title: 'Digital Marketing & SEO',
-      links: []
-    },
-    {
-      color: '#F7C948',
-      icon: 'icon icon-livementor-alt2',
-      organism: 'LiveMentor',
-      title: 'Digital Marketing',
-      links: []
+      links: [
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/1pjFIIzllf1ro9b6v7D4lQXFWmnZkev2L?usp=sharing'
+        }
+      ]
     },
     {
       color: '#EA5252',
       icon: 'icon icon-udemy',
       organism: 'uDemy',
-      links: []
+      links: [
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/1RR20bh6OAn0XOFIA3i7cfK2c_xPtiP5Y?usp=sharing'
+        }
+      ]
     },
     {
-      color: '#81BC06',
+      color: '#0072C5',
       icon: 'icon icon-microsoft',
       organism: 'Microsoft Learn / MVA',
-      links: []
-    },
-    {
-      color: '#EB394F',
-      icon: 'icon icon-pluralsight',
-      organism: 'PluralSight / CodeSchool',
-      links: []
+      links: [
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/17toZKTa4WfvNNjPT8R6212xe7O6tR_zZ?usp=sharing'
+        },
+        {
+          title: 'Transcript',
+          link: 'https://drive.google.com/file/d/0B3eUGKZH1aIyZURaZDZHbnpLRG8/view?usp=sharing'
+        }
+      ]
     }
   ],
   education: [
@@ -83,7 +161,7 @@ const data = {
       icon: 'icon icon-google',
       school: 'Google',
       title: 'Mobile Web Specialist',
-      description: 'A hign-end Front-End web certification, on Performance, Accessibility, advanced Responsiveness and Progressive Web Apps.',
+      description: 'A high-end Front-End web certification, on Performance, Accessibility, advanced Responsiveness and Progressive Web Apps.',
       location: 'Remote',
       dates: {
         start: 'Nov 2019',
@@ -97,14 +175,24 @@ const data = {
             list: ['Accessibility', 'Progressive Web Apps', 'Responsive', 'Indexed DB', 'Touch Events', 'Networking', 'Web Workers', 'Performance']
           }
         ]
-      }
+      },
+      links: [
+        {
+          title: 'Diploma',
+          link: 'https://drive.google.com/file/d/1oSoY2nFzWHXAZvr8kE2oQLFW192TQUkK/view?usp=sharing'
+        },
+        {
+          title: 'Program',
+          link: 'https://developers.google.com/certification/mobile-web-specialist'
+        }
+      ]
     },
     {
       color: '#A41034',
       icon: 'icon icon-harvardx-alt',
       school: 'Harvard University (via edX)',
       title: 'CS For Web Programing',
-      description: 'A complete 6-month program on complex algorithms and advanced functionalities for Website Development',
+      description: 'A complete 6-month technical program on complex algorithms and advanced functionalities for Website Development',
       location: 'Remote',
       dates: {
         start: 'July 2017',
@@ -118,7 +206,17 @@ const data = {
             list: ['Image Processing', 'Complex Algorithms', 'Data Structures', 'Web Projects', 'Socket communication', 'APIs']
           }
         ]
-      }
+      },
+      links: [
+        {
+          title: 'Diploma',
+          link: 'https://drive.google.com/file/d/1ei08RGS6lUkVjfRHpkoXT4KMFjIMzFmL/view?usp=sharing'
+        },
+        {
+          title: 'Program',
+          link: 'https://www.edx.org/professional-certificate/harvardx-computer-science-for-web-programming'
+        }
+      ]
     },
     {
       color: '#009EE2',
@@ -143,7 +241,17 @@ const data = {
             list: ['Innovation', 'Project Management', 'Entrepreneurship', 'Communication', 'Quality']
           }
         ]
-      }
+      },
+      links: [
+        {
+          title: 'Diploma',
+          link: 'https://drive.google.com/file/d/1xtERX4ik6_ahox2k9b3MM12z0NyKUTQC/view?usp=sharing'
+        },
+        {
+          title: 'Program',
+          link: 'https://polytech.univ-lyon1.fr/programs/computer-science/standard/standard-computer-engineering-curriculum-793066.kjsp?RH=1314882364257'
+        }
+      ]
     },
     {
       color: '#FE8800',
@@ -168,10 +276,70 @@ const data = {
             list: ['Company Organization', 'Communication', 'Project Management']
           }
         ]
-      }
+      },
+      links: [
+        {
+          title: 'Diploma',
+          link: 'https://drive.google.com/file/d/1pk2U4MfifD7AWepUgSYFrQ-X4K89qSy0/view?usp=sharing'
+        },
+        {
+          title: 'Program (FR)',
+          link: 'https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse-/dut-informatique-602485.kjsp?RH=1432020913745'
+        }
+      ]
     }
   ],
   experience: [
+    {
+      color: '#113885',
+      lighten: '#1d5edf',
+      darken: '#05122b',
+      icon: 'icon icon-logtrack',
+      company: 'Independent',
+      title: 'Web Developer',
+      location: 'Remote',
+      contract: '',
+      dates: {
+        start: 'Mar 2019',
+        end: 'Current',
+        yEnd: 'Current'
+      },
+      projects: [
+        {
+          name: 'LogTrack',
+          icon: 'icon icon-logtrack',
+          description: 'Complete Saas Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...'
+        }
+      ],
+      tasks: [
+        'Branding & Identity Guide',
+        'Front-End Architecture',
+        'Implemented Back-End features with Firebase',
+        'Secured user\'s data with Firebase Rules',
+        'Written specifications',
+        'Bought and configured domain name, deployed to Firebase Hosting',
+        'Developed Real-Time, Right Management, Role-based, Settings functionalities'
+      ],
+      mainTechnologies: [
+        {
+          icon: 'icon icon-firebase',
+          title: 'Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions'
+        },
+        {
+          icon: 'icon icon-react',
+          title: 'React'
+        },
+        {
+          icon: 'icon icon-openlayers',
+          title: 'OpenLayers'
+        },
+        {
+          icon: 'icon icon-sass-alt',
+          title: 'Sass'
+        }
+      ],
+      otherTechnologies: []
+    },
     {
       color: '#FF2222',
       lighten: '#ff8888',
@@ -180,10 +348,11 @@ const data = {
       company: 'TC Gannay',
       title: 'Graphic & UI Designer',
       location: 'Remote',
-      contract: 'voluntary',
+      contract: 'Freelance',
       dates: {
         start: 'Apr 2019',
-        end: 'July 2019'
+        end: 'July 2019',
+        yEnd: 2019
       },
       projects: [
         {
@@ -227,7 +396,8 @@ const data = {
       contract: 'External - via Intitek',
       dates: {
         start: 'Mar 2018',
-        end: 'Mar 2019'
+        end: 'Mar 2019',
+        yEnd: 2019
       },
       projects: [
         {
@@ -308,13 +478,14 @@ const data = {
       contract: 'External - via Intitek',
       dates: {
         start: 'Sept 2017',
-        end: 'Mar 2018'
+        end: 'Mar 2018',
+        yEnd: 2018
       },
       projects: [
         {
           name: 'IdeoMed / IdeoSanté',
           icon: 'icon icon-ideomed',
-          description: 'Product that equips 80% of French hospitals to help them to manage health profiles, pills stock...'
+          description: 'Product range that equips 80% of French hospitals to help them to manage health profiles, pills stock...'
         }
       ],
       tasks: [
@@ -339,7 +510,7 @@ const data = {
       otherTechnologies: []
     },
     {
-      color: '#FFD15D',
+      color: '#edcd40',
       lighten: '#ffeec3',
       darken: '#f6b000',
       icon: 'icon icon-vdsconsulting-alt',
@@ -349,7 +520,8 @@ const data = {
       contract: 'Intern',
       dates: {
         start: 'Feb 2017',
-        end: 'Sept 2017'
+        end: 'Sept 2017',
+        yEnd: 2017
       },
       projects: [
         {
@@ -388,8 +560,8 @@ const data = {
         'Designed layouts and views',
         'Created Brands and Icons as well as Color Schemes',
         'Developed solutions in speed development with appropriate technologies',
-        'Put online an e-commerce complete solution with 10,000+ products and online checkout',
-        'Developed independant & automatic CV creation module, calling official European Commission APIs and generating on-the-fly PDFs',
+        'Develop & Put online an e-commerce complete solution with 10,000+ products and online checkout',
+        'Developed independent & automatic Resume creation module, calling official European Commission APIs and generating on-the-fly PDFs',
         'Written reports for web-marketing and design problematics',
         'Created dynamic PDF forms that interact with multiple APIs'
       ],
@@ -410,6 +582,10 @@ const data = {
           icon: 'icon icon-nodejs',
           title: 'NodeJS Express'
         },
+        {
+          icon: 'icon icon-livecycle',
+          title: 'Adobe LiveCycle'
+        },
       ],
       otherTechnologies: [
         {
@@ -423,10 +599,6 @@ const data = {
         {
           icon: 'icon icon-sass-alt',
           title: 'Sass'
-        },
-        {
-          icon: 'icon icon-livecycle',
-          title: 'Adobe LiveCycle'
         },
         {
           icon: 'icon icon-leaflet',
@@ -445,7 +617,8 @@ const data = {
       contract: 'Cooperation',
       dates: {
         start: 'July 2016',
-        end: 'Mar 2017'
+        end: 'Mar 2017',
+        yEnd: 2017
       },
       projects: [
         {
@@ -504,7 +677,8 @@ const data = {
       contract: 'Intern, then Fixed-Term Contract',
       dates: {
         start: 'July 2015',
-        end: 'Sept 2016'
+        end: 'Sept 2016',
+        yEnd: 2016
       },
       projects: [
         {
@@ -560,7 +734,8 @@ const data = {
       contract: 'External - via Polyenco',
       dates: {
         start: 'Jan 2015',
-        end: 'June 2015'
+        end: 'June 2015',
+        yEnd: 2015
       },
       projects: [
         {
@@ -593,7 +768,8 @@ const data = {
       contract: 'Intern',
       dates: {
         start: 'Apr 2014',
-        end: 'June 2014'
+        end: 'June 2014',
+        yEnd: 2014
       },
       projects: [
         {
@@ -634,7 +810,8 @@ const data = {
       contract: 'External - via IUT Lyon 1',
       dates: {
         start: 'Nov 2013',
-        end: 'Mar 2014'
+        end: 'Mar 2014',
+        yEnd: 2014
       },
       projects: [
         {
@@ -644,7 +821,7 @@ const data = {
         }
       ],
       tasks: [
-        'Created a Graphic Chart and a logo',
+        'Created an Identity and Style Guide, as well as a logo',
         'Developed an optimized map module',
         'Organized teamwork and communication with the client',
         'Transformed data for iso database'
@@ -2374,7 +2551,7 @@ const data = {
       technologies: [
         {
           icon: 'icon icon-firebase',
-          title: 'Firebase Cloud Firestore + Auth + Storage + Functions'
+          title: 'Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions'
         },
         {
           icon: 'icon icon-react',
@@ -2976,7 +3153,7 @@ const data = {
       ]
     }
   ],
-  expertise: [
+  services: [
     {
       title: 'Website Development',
       description: 'Your Website, from first specifications to online & maintenance.',
@@ -3003,6 +3180,7 @@ const data = {
       color: '#2962FF',
       description: 'Solid experience in Web Development (first professional website in 2006). Able to build fast and responsive websites based on reusable components and complex architecture.',
       icon: 'icon icon-desktop',
+      expertise: true,
       technologies: [
         {
           icon: 'icon icon-css-alt',
@@ -3013,6 +3191,7 @@ const data = {
           title: 'JavaScript, TypeScript, React, Angular, Vue, Svelte'
         },
         {
+          icon: 'icon icon-bootstrap',
           title: 'Bootstrap, MDBootstrap, Material UI, PureCSS'
         },
         {
@@ -3024,14 +3203,16 @@ const data = {
         'Progressive Web Apps',
         'Pixel-perfect implementations',
         'Responsive Websites',
-        'Audits'
+        'Audits',
+        'Performance & SEO'
       ]
     },
     {
       title: 'Back-End',
       color: '#00BFA5',
-      description: 'Able to create fast and secure algorithms, with synchronized and asynchronized processing.',
+      description: 'Able to create fast and secure algorithms, use Design Patterns, and synchronized and asynchronized processing.',
       icon: 'icon icon-cog',
+      expertise: true,
       technologies: [
         {
           icon: 'icon icon-java',
@@ -3061,6 +3242,7 @@ const data = {
       color: '#FF6D00',
       description: 'Strong knowledge of both Graphic & UI Design. Recognized to have out of the box ideas as well as trend and functionality in mind. Able to audit websites and to create both graphic and UI design.',
       icon: 'icon icon-paint-brush',
+      expertise: true,
       technologies: [
         {
           icon: 'icon icon-xd',
@@ -3097,6 +3279,7 @@ const data = {
       title: 'Web Marketing',
       color: '#5C1678',
       icon: 'icon icon-search-dollar',
+      expertise: false,
       list: [
         'Google Analytics',
         'Call-To-Action',
@@ -3111,6 +3294,7 @@ const data = {
       title: 'Databases',
       color: '#DD2C00',
       icon: 'icon icon-database',
+      expertise: false,
       technologies: [
         {
           icon: 'icon icon-mysql',
@@ -3148,8 +3332,9 @@ const data = {
     },
     {
       title: 'Ops',
-      color: '#ffea00',
+      color: '#cfbe00',
       icon: 'icon icon-server',
+      expertise: false,
       technologies: [
         {
           icon: 'icon icon-apache',
@@ -3162,6 +3347,14 @@ const data = {
         {
           icon: 'icon icon-lets-encrypt',
           title: 'Let\'s Encrypt'
+        },
+        {
+          icon: 'icon icon-google-cloud',
+          title: 'Google Cloud'
+        },
+        {
+          icon: 'icon icon-aws',
+          title: 'AWS'
         }
       ]
     },
@@ -3169,6 +3362,7 @@ const data = {
       title: 'Machine Learning',
       color: '#0091EA',
       icon: 'icon icon-microchip',
+      expertise: false,
       technologies: [
         {
           icon: 'icon icon-hadoop',
@@ -3192,6 +3386,7 @@ const data = {
       title: 'Mobile',
       color: '#00C853',
       icon: 'icon icon-mobile',
+      expertise: false,
       technologies: [
         {
           icon: 'icon icon-android',

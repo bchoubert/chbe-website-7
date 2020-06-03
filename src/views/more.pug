@@ -7,6 +7,24 @@ block content
       p= data.profile.resume
   .card
     .card-content
+      h1 Expertise
+      ul.card-list
+        each skill in data.skills
+          if skill.expertise
+            +skill(skill, true)
+      h1 Skills
+      ul.card-half-list
+        each skill in data.skills
+          if !skill.expertise
+            +skill(skill, false)
+  .card
+    .card-content
+      h1 Tongues
+      ul.card-half-list
+        each tongue in data.tongues
+          +tongue(tongue)
+  .card
+    .card-content
       h1 Education
       ul.card-half-list
         each edu in data.education
@@ -17,3 +35,16 @@ block content
       ul.card-half-list
         each cert in data.certifications
           +certification(cert)
+        li.project.card.card-half
+          a.item(href=`https://drive.google.com/drive/folders/0B3eUGKZH1aIyVnlUWUpBMnQ5aFE?usp=sharing`, target='_blank')
+            .square
+              .square-main(style=`background-color: var(--theme)`)
+                i.icon.icon-plus
+            .item-data
+              h2 All Certifications
+  .card
+    .card-content
+      h1 Experience
+      ul.card-list
+        each exp in data.experience
+          +experience(exp)

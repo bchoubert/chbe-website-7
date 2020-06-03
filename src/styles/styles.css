@@ -30,6 +30,10 @@ img[lightbox], amp-img[lightbox] {
   cursor: zoom-in;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .btn, .btn:hover, .btn:active, .btn:visited, .btn:focus, .btn:link {
   padding: .5rem 1rem;
   border-radius: 2px;
@@ -37,6 +41,7 @@ img[lightbox], amp-img[lightbox] {
   text-transform: uppercase;
   background-color: var(--text);
   font-weight: 400;
+  border: 2px solid var(--text);
 }
 
 .btn-container {
@@ -50,6 +55,15 @@ img[lightbox], amp-img[lightbox] {
   margin-top: 1rem;
 }
 
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited, .btn-secondary:focus, .btn-secondary:link {
+  background-color: transparent;
+  color: var(--text);
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -61,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1, h2, h3 {
-  margin-bottom: .5em;
+h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
+  margin-top: .5em;
 }
 
 .content {
@@ -156,7 +170,7 @@ h1, h2, h3 {
 }
 
 .ssub {
-  font-size: 85%;
+  font-size: 80%;
   font-style: italic;
 }
 
@@ -234,21 +248,49 @@ h1, h2, h3 {
 .shot {
   width: calc(50% - .5rem);
   float: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shot:nth-child(2n) {
   margin-left: 1rem;
 }
 
+.shot amp-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
+}
+
 .shot span {
-  height: 1.2rem;
-  width: 100%;
+  height: 1.5rem;
   display: block;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 1rem;
+}
+
+ul.tasks {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+amp-list {
+  margin-top: .5rem;
 }
 
 amp-list.with-custom-loader .amp-active {
@@ -356,7 +398,7 @@ amp-list.with-custom-loader .amp-active > div {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
 
 .card-half-list .card {
@@ -418,8 +460,6 @@ nav.card, footer.card {
 .nav-link {
   height: 4rem;
   min-width: 4rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -429,7 +469,20 @@ nav.card, footer.card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 .5rem;
+}
+
+.nav-link a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-placeholder {
@@ -481,6 +534,12 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.item-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .item h1, .item h2 {
@@ -611,16 +670,6 @@ header .card-content:first-child i {
   display: block;
 }
 
-.project-detail-header .chip {
-  margin-right: 1rem;
-  white-space: nowrap;
-}
-
-.project-detail-header .chip i {
-  display: inline-block;
-  padding: 0 .5rem;
-}
-
 .project-detail-header a, .project-detail-header a:hover, .project-detail-header a:focus, .project-detail-header a:visited, .project-detail-header a:link, .project-detail-header a:active {
   text-decoration: underline;
 }
@@ -635,30 +684,183 @@ header .card-content:first-child i {
   padding-left: 1rem;
 }
 
-@media screen and (max-width: 850px) {
+.chip {
+  margin-right: 1rem;
+  white-space: nowrap;
+  background-color: var(--theme);
+  padding: .2rem .5rem;
+  border-radius: 2px;
+  font-size: 85%;
+  margin-top: .5rem;
+  display: inline-block;
+}
+
+.chip i {
+  display: inline-block;
+}
+
+.chip i:first-child {
+  margin-right: .5rem;
+}
+
+.chip i:last-child {
+  margin-left: .5rem;
+}
+
+form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+form #token-container {
+  display: block;
+  overflow: hidden;
+  max-height: 1px;
+}
+
+form .form-message {
+  margin: .5rem 0;
+  font-size: 120%;
+  text-align: center;
+}
+
+form .form-message--error .chip {
+  background-color: #FF7777;
+}
+
+form .form-message--success .chip {
+  background-color: #44AA44;
+}
+
+form .input-container, form .textarea-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .input-container textarea, form .textarea-container textarea {
+  resize: none;
+}
+
+form .input-container {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+form .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top .5s, color .5s, left .5s;
+  transition: top .5s, color .5s, left .5s;
+}
+
+form .input-container:first-child {
+  margin-right: 1rem;
+}
+
+form .input-container:last-child {
+  margin-left: 1rem;
+}
+
+form .input-container input:invalid:not(:focus) + label {
+  top: 1.9rem;
+  left: 1rem;
+  color: var(--theme);
+}
+
+form .input-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .textarea-container {
+  margin-top: .5rem;
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+form .textarea-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top .5s, color .5s, left .5s;
+  transition: top .5s, color .5s, left .5s;
+}
+
+form .textarea-container textarea:invalid:not(:focus) + label {
+  top: 1.9rem;
+  left: 1rem;
+  color: var(--theme);
+}
+
+form input#email, form input#name, form textarea {
+  border-radius: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: .5rem;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1199px) {
   .card-half {
     width: 100%;
   }
   .card-half-list .card:nth-child(2n) {
     margin-left: 0;
   }
+  .shot {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .shot amp-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+    max-height: 60px;
+  }
+  .shot:nth-child(2n) {
+    margin-left: 0;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 699px) {
   body {
     padding: 0 .5rem;
+  }
+  form .input-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .input-container:first-child, form .input-container:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  form .input-container + .input-container {
+    margin-top: .5rem;
   }
   .nav-container {
     width: calc(100% - 1rem);
   }
   .nav-title {
     display: none;
-  }
-  .shot {
-    width: 100%;
-  }
-  .shot:nth-child(2n) {
-    margin-left: 0;
   }
   .project-mobile {
     margin: 0;
@@ -676,6 +878,26 @@ header .card-content:first-child i {
   }
   .card-content {
     padding: .5rem;
+  }
+  .square,
+  .item .square {
+    height: 3rem;
+    width: 3rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 3rem;
+            flex: 0 0 3rem;
+    margin: .5rem 0 .2rem 0;
+  }
+  .square-main,
+  .item .square-main {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 130%;
+  }
+  .square:before,
+  .item .square:before {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 

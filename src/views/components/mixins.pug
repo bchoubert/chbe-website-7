@@ -2,8 +2,22 @@
 mixin shot()
   template(type='amp-mustache')
     a.shot(href='{{ html_url }}', target='_blank')
-      amp-img(src='{{ images.hidpi }}', width='400', height='300', layout='responsive')
+      amp-img(src='{{ images.normal }}', width='160', height='120')
       span {{title}}
+
+mixin tongue(tongue)
+  li.card.card-half
+    .item
+      .square
+        .square-main(style=`background: url('${tongue.flag.w150}') center center/cover no-repeat`)
+      .item-data
+        h2= tongue.title
+        span.sub= tongue.level
+        .chip-list
+          each cert in tongue.certificates
+            a.chip(href=cert.link, target='_blank')
+              span= cert.title
+              i.icon.icon-external-link
 
 mixin project(project)
   li.project.card.card-half
@@ -26,9 +40,14 @@ mixin education(edu)
       .item-data
         h2= edu.title
         .edu-details
-          span= edu.school + ' - ' + edu.dates.yEnd + ' - ' + edu.location
+          span= edu.school + ' / ' + edu.dates.yEnd + ' / ' + edu.location
         .edu-desc.ssub
           span= edu.description
+        .chip-list
+          each link in edu.links
+            a.chip(href=link.link, target='_blank')
+              span= link.title
+              i(style=`color: ${edu.color}`).icon.icon-external-link
 
 mixin certification(cert)
   li.certification.card.card-half
@@ -37,23 +56,86 @@ mixin certification(cert)
         .square-main(style=`background-color: ${cert.color}`)
           i(class=cert.icon)
       .item-data
-        h2= cert.title
-        .cert-details
-          span= cert.organism
+        if cert.title
+          h2= cert.title
+          .cert-details
+            span= cert.organism
+        else
+          h2= cert.organism
+        .chip-list
+          each link in cert.links
+            a.chip(href=link.link, target='_blank')
+              span= link.title
+              i(style=`color: ${cert.color}`).icon.icon-external-link
 
 mixin network(network)
   li.nav-link
     a(href=network.link, target='_blank')
       i(class=network.icon)
 
-mixin expertise(expertise)
-  li.expertise-item.card.card-half
+mixin skill(skill, fullWidth)
+  li(class= fullWidth ? 'card' : 'card card-half')
     .item
       .square
-        .square-main(style=`background-color: ${expertise.color}`)
-          i(class=expertise.icon)
+        .square-main(style=`background-color: ${skill.color}`)
+          i(class=skill.icon)
       .item-data
-        h2= expertise.title
+        h2= skill.title
+        if skill.description
+          span.skill-details= skill.description
+        if skill.list
+          .chip-list
+            each skItem in skill.list
+              span.chip= skItem
+        if skill.technologies
+          .chip-list
+            each tech in skill.technologies
+              span.chip
+                if tech.icon
+                  i(class= tech.icon, style=`color: ${skill.color}`)
+                span= tech.title
+
+mixin service(service)
+  li.card.card-half
+    .item
+      .square
+        .square-main(style=`background-color: ${service.color}`)
+          i(class=service.icon)
+      .item-data
+        h2= service.title
+
+mixin experience(exp)
+  li.card
+    .item.item-top
+      .square
+        .square-main(style=`background-color: ${exp.color}`)
+          i(class=exp.icon)
+      .item-data
+        h2= exp.title
+        span= exp.company + ' / ' + exp.location + ' / ' + exp.contract + ' / ' + exp.dates.yEnd
+        h3 Technologies
+        .chip-list
+          each tech in exp.mainTechnologies
+            .chip
+              i(class= tech.icon, style= `color: ${exp.color}`)
+              span= tech.title
+        if exp.projects
+          h3 Projects
+          ul.card-half-list
+            each project in exp.projects
+              .card.card-half
+                .indicator-parent
+                  span.indicator
+                    i(class= project.icon, style= `color: ${exp.color}`)
+                  span
+                    h4= project.name
+                    if project.description
+                      span= project.description
+        h3 Tasks
+        ul.tasks
+          each task in exp.tasks
+            li= task
+    
 
 mixin projectDetails(project)
   .card
@@ -78,21 +160,25 @@ mixin projectDetails(project)
             span !{project.fullDescription}
           .my
             h3 Tags
-            each tag in project.tags
-              span(style=`color: ${project.lighten}`)= ' #'
-              span= tag
+            .chip-list
+              each tag in project.tags
+                span.chip
+                  i.icon.icon-hashtag(style=`color: ${project.lighten}`)
+                  span= tag
           .my
             h3 Links
-            each link in project.links
-              a.chip(href=link.link, target='_blank')
-                i(class=link.icon, style=`color: ${project.lighten}`)
-                span= link.title
+            .chip-list
+              each link in project.links
+                a.chip(href=link.link, target='_blank')
+                  i(class=link.icon, style=`color: ${project.lighten}`)
+                  span= link.title
           .my
             h3 Technologies
-            each tech in project.technologies
-              span.chip
-                i(class=tech.icon, style=`color: ${project.lighten}`)
-                span= tech.title
+            .chip-list
+              each tech in project.technologies
+                span.chip
+                  i(class=tech.icon, style=`color: ${project.lighten}`)
+                  span= tech.title
   each projectDetail in project.details
     .card
       .card-content
