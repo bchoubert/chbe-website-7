@@ -7,7 +7,16 @@ const pug = require('pug'),
   process = require('process');
 
 const SRC_FOLDER = 'src/', OUTPUT_FOLDER = 'dist/';
-const PAGES_TO_COMPILE = ['index', 'more'];
+const PAGES_TO_COMPILE = [
+  {
+    src: 'index',
+    output: 'index'
+  },
+  {
+    src: 'more',
+    output: 'pages/more'
+  }
+];
 
 const errorHandler = console.error;
 
@@ -30,8 +39,8 @@ const FUNCTIONS = {
                                       .replace(/url\("chbe-font.([a-z0-9#?-]+)"\)/g, 'url("/resources/custom-font/dist/chbe-font.$1")');
 
     // COMPILE PAGES
-    PAGES_TO_COMPILE.forEach(page => 
-      fs.writeFile(`${OUTPUT_FOLDER}${page}.html`, pug.compileFile(`${SRC_FOLDER}views/${page}.pug`)({ data }), errorHandler));
+    PAGES_TO_COMPILE.forEach(pageSetup => 
+      fs.writeFile(`${OUTPUT_FOLDER}${pageSetup.output}.html`, pug.compileFile(`${SRC_FOLDER}views/${pageSetup.src}.pug`)({ data }), errorHandler));
 
     // COMPILE SPECIFIC PAGES
     data.projects.forEach(project => 
