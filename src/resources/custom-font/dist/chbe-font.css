@@ -504,160 +504,166 @@ url("chbe-font.svg#chbe-font") format("svg");
 .icon-sass-alt:before {
 	content: "\f1a2";
 }
-.icon-search-dollar:before {
+.icon-scrimba:before {
 	content: "\f1a3";
 }
-.icon-server:before {
+.icon-search-dollar:before {
 	content: "\f1a4";
 }
-.icon-shapes:before {
+.icon-server:before {
 	content: "\f1a5";
 }
-.icon-shipping-fast:before {
+.icon-shapes:before {
 	content: "\f1a6";
 }
-.icon-shopping-cart:before {
+.icon-shipping-fast:before {
 	content: "\f1a7";
 }
-.icon-signature:before {
+.icon-shopping-cart:before {
 	content: "\f1a8";
 }
-.icon-skillmatrix-alt:before {
+.icon-signature:before {
 	content: "\f1a9";
 }
-.icon-slot:before {
+.icon-skillmatrix-alt:before {
 	content: "\f1aa";
 }
-.icon-sogelink-alt:before {
+.icon-slot:before {
 	content: "\f1ab";
 }
-.icon-spring:before {
+.icon-socialmediapro-alt2:before {
 	content: "\f1ac";
 }
-.icon-sql:before {
+.icon-sogelink-alt:before {
 	content: "\f1ad";
 }
-.icon-sqlite:before {
+.icon-spring:before {
 	content: "\f1ae";
 }
-.icon-square:before {
+.icon-sql:before {
 	content: "\f1af";
 }
-.icon-star:before {
+.icon-sqlite:before {
 	content: "\f1b0";
 }
-.icon-steering-wheel:before {
+.icon-square:before {
 	content: "\f1b1";
 }
-.icon-swatchbook:before {
+.icon-star:before {
 	content: "\f1b2";
 }
-.icon-symfony-alt:before {
+.icon-steering-wheel:before {
 	content: "\f1b3";
 }
-.icon-tachometer-fastest:before {
+.icon-swatchbook:before {
 	content: "\f1b4";
 }
-.icon-talend-alt:before {
+.icon-symfony-alt:before {
 	content: "\f1b5";
 }
-.icon-tc-gannay-alt:before {
+.icon-tachometer-fastest:before {
 	content: "\f1b6";
 }
-.icon-tc-gannay:before {
+.icon-talend-alt:before {
 	content: "\f1b7";
 }
-.icon-testflight:before {
+.icon-tc-gannay-alt:before {
 	content: "\f1b8";
 }
-.icon-th-list:before {
+.icon-tc-gannay:before {
 	content: "\f1b9";
 }
-.icon-three:before {
+.icon-testflight:before {
 	content: "\f1ba";
 }
-.icon-times:before {
+.icon-th-list:before {
 	content: "\f1bb";
 }
-.icon-tomcat:before {
+.icon-three:before {
 	content: "\f1bc";
 }
-.icon-top-right-arrow:before {
+.icon-times:before {
 	content: "\f1bd";
 }
-.icon-transportation:before {
+.icon-tomcat:before {
 	content: "\f1be";
 }
-.icon-trello:before {
+.icon-top-right-arrow:before {
 	content: "\f1bf";
 }
-.icon-truck:before {
+.icon-transportation:before {
 	content: "\f1c0";
 }
-.icon-typescript:before {
+.icon-trello:before {
 	content: "\f1c1";
 }
-.icon-udemy:before {
+.icon-truck:before {
 	content: "\f1c2";
 }
-.icon-universitelyon:before {
+.icon-typescript:before {
 	content: "\f1c3";
 }
-.icon-user-tie:before {
+.icon-udemy:before {
 	content: "\f1c4";
 }
-.icon-users:before {
+.icon-universitelyon:before {
 	content: "\f1c5";
 }
-.icon-vdsconsulting-alt:before {
+.icon-user-tie:before {
 	content: "\f1c6";
 }
-.icon-velov-alt:before {
+.icon-users:before {
 	content: "\f1c7";
 }
-.icon-velov-alt2:before {
+.icon-vdsconsulting-alt:before {
 	content: "\f1c8";
 }
-.icon-velov:before {
+.icon-velov-alt:before {
 	content: "\f1c9";
 }
-.icon-vemasys-alt:before {
+.icon-velov-alt2:before {
 	content: "\f1ca";
 }
-.icon-victory:before {
+.icon-velov:before {
 	content: "\f1cb";
 }
-.icon-vuejs-alt:before {
+.icon-vemasys-alt:before {
 	content: "\f1cc";
 }
-.icon-wallet:before {
+.icon-victory:before {
 	content: "\f1cd";
 }
-.icon-weather:before {
+.icon-vuejs-alt:before {
 	content: "\f1ce";
 }
-.icon-webpack:before {
+.icon-wallet:before {
 	content: "\f1cf";
 }
-.icon-windev-alt:before {
+.icon-weather:before {
 	content: "\f1d0";
 }
-.icon-window:before {
+.icon-webpack:before {
 	content: "\f1d1";
 }
-.icon-wrench:before {
+.icon-windev-alt:before {
 	content: "\f1d2";
 }
-.icon-xd:before {
+.icon-window:before {
 	content: "\f1d3";
 }
-.icon-zestbank-alt:before {
+.icon-wrench:before {
 	content: "\f1d4";
 }
-.icon-zestbank-alt2:before {
+.icon-xd:before {
 	content: "\f1d5";
 }
-.icon-zestbank:before {
+.icon-zestbank-alt:before {
 	content: "\f1d6";
+}
+.icon-zestbank-alt2:before {
+	content: "\f1d7";
+}
+.icon-zestbank:before {
+	content: "\f1d8";
 }
 

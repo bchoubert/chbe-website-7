@@ -118,6 +118,33 @@ const data = {
       ]
     },
     {
+      color: '#FE541C',
+      icon: 'icon icon-socialmediapro-alt2',
+      organism: 'Social Media Pro',
+      title: 'Digital Marketing & SEO',
+      links: [
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/1bpVlewdqh87u4aKWs74PBzN_lslkdqy5?usp=sharing'
+        }
+      ]
+    },
+    {
+      color: '#F86201',
+      icon: 'icon icon-scrimba',
+      organism: 'Scrimba',
+      links: [
+        {
+          title: 'Profile',
+          link: 'https://scrimba.com/@bchoubert'
+        },
+        {
+          title: 'Certificates',
+          link: 'https://drive.google.com/drive/folders/1L0plRWEL-PpzOxKVEtpNukSBOTpfCo_W?usp=sharing'
+        }
+      ]
+    },
+    {
       color: '#007BB6',
       icon: 'icon icon-linkedin-alt',
       organism: 'LinkedIn Learning',
@@ -153,7 +180,7 @@ const data = {
           link: 'https://drive.google.com/file/d/0B3eUGKZH1aIyZURaZDZHbnpLRG8/view?usp=sharing'
         }
       ]
-    }
+    },
   ],
   education: [
     {
@@ -734,7 +761,7 @@ const data = {
       contract: 'External - via Polyenco',
       dates: {
         start: 'Jan 2015',
-        end: 'June 2015',
+        end: 'March 2015',
         yEnd: 2015
       },
       projects: [
