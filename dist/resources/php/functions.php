@@ -7,7 +7,7 @@ class Database extends SQLite3 {
 }
 
 function isTextContainsSpecial($text) {
-  $FORBIDDEN_STRINGS = ["<html", "</a>", "src=", "href="];
+  $FORBIDDEN_STRINGS = ["<html", "</a>", "src=", "href=", "[url=http", "[/url]"];
 
   foreach ($FORBIDDEN_STRINGS as $STR) {
     if (strpos($text, $STR) !== false) {

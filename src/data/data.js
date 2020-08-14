@@ -3288,6 +3288,14 @@ const data = {
           title: 'Inkscape'
         },
         {
+          icon: 'icon icon-affinity-photo',
+          title: 'Affinity Photo'
+        },
+        {
+          icon: 'icon icon-affinity-designer',
+          title: 'Affinity Designer'
+        },
+        {
           icon: 'icon icon-gimp',
           title: 'Gimp'
         },
