@@ -72,6 +72,7 @@ mixin network(network)
   li.nav-link
     a(href=network.link, target='_blank')
       i(class=network.icon)
+      b(style=`background-color: ${network.color}`)
 
 mixin skill(skill, fullWidth)
   li(class= fullWidth ? 'card' : 'card card-half')
@@ -138,6 +139,8 @@ mixin experience(exp)
     
 
 mixin projectDetails(project)
+  if project.top
+    .card.card-top(style=`background-image: url("${project.top}"); height: 600px; background-size: cover; background-position: center center;`)
   .card
     .card-content(style=`background-image: linear-gradient(135deg, ${project.color} 60%, ${project.lighten})`)
       span.project.item

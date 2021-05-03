@@ -2,6 +2,8 @@
   --text: #E4E4E4;
   --theme: #181818;
   --theme-light: #232323;
+  --pink: #EDA2C3;
+  --purple: #081F3F;
 }
 
 body {
@@ -19,6 +21,7 @@ img, amp-img {
   object-fit: contain;
   
   &.w-100 {
+    width: 100%;
     min-height: 200px;
     min-width: 200px;
   }
@@ -30,6 +33,8 @@ img, amp-img {
 
 .btn {
   cursor: pointer;
+  position: relative;
+  transition: border-color .25s;
 
   &, &:hover, &:active, &:visited, &:focus, &:link {
     padding: .5rem 1rem;
@@ -52,6 +57,30 @@ img, amp-img {
     &, &:hover, &:active, &:visited, &:focus, &:link {
       background-color: transparent;
       color: var(--text);
+    }
+  }
+
+  b {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    background-color: var(--purple);
+    overflow: hidden;
+    color: var(--text);
+    white-space: nowrap;
+    font-weight: normal;
+    transition: width .25s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    b {
+      width: calc(100% + 4px);
     }
   }
 
@@ -321,6 +350,14 @@ amp-list {
   & + .card {
     margin-top: 2rem;
   }
+
+  &-top + .card {
+    position: relative;
+    top: -7.5rem;
+    width: calc(100% - 5rem);
+    left: 2.5rem;
+    margin-bottom: -5rem;
+  }
 }
 
 .container {
@@ -353,12 +390,17 @@ nav.card, footer.card {
 
 .nav {
 
+  &-title {
+    flex: 1;
+  }
+
   &-link {
     height: 4rem;
     min-width: 4rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     a {
       height: 100%;
@@ -366,6 +408,28 @@ nav.card, footer.card {
       display: inline-flex;
       justify-content: center;
       align-items: center;
+    }
+
+    i {
+      position: relative;
+      z-index: 2;
+      transition: transform .25s;
+    }
+
+    b {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      transition: height .25s;
+      z-index: 0;
+    }
+
+    &:hover {
+      b {
+        height: 100%;
+      }
     }
   }
 
@@ -480,6 +544,10 @@ header .card-content:first-child {
 
 .project {
 
+  .square {
+    margin-right: 1rem;
+  }
+
   &-mobile {
     margin: 5rem 2rem 5rem 0;
     max-width: 25rem;
@@ -493,8 +561,6 @@ header .card-content:first-child {
       overflow: hidden;
       border: 3px solid transparent;
       outline: 1px solid transparent;
-      transform: translateZ(0) rotateY(20deg);
-      transform-origin: 50% 75%;
       background-color: #FFFFFF;
   
       amp-img {
@@ -576,7 +642,6 @@ form {
 
   .input, .textarea {
     &-container {
-      flex: 1;
       display: flex;
       flex-direction: column;
 
@@ -584,6 +649,11 @@ form {
         resize: none;
       }
     }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
   }
 
   .input {
@@ -598,14 +668,6 @@ form {
         transition: top .5s, color .5s, left .5s;;
       }
 
-      &:first-child {
-        margin-right: 1rem;
-      }
-
-      &:last-child {
-        margin-left: 1rem;
-      }
-
       input:invalid:not(:focus) {
         & + label {
           top: 1.9rem;
@@ -617,7 +679,10 @@ form {
 
     &-line {
       display: flex;
-      flex-direction: row;
+      flex: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 0;
     }
   }
 
@@ -625,12 +690,14 @@ form {
     margin-top: .5rem;
     position: relative;
     padding-top: 1.5rem;
+    flex: 2;
+    margin-top: 0;
 
     label {
       position: absolute;
       top: 0;
       left: 0;
-      transition: top .5s, color .5s, left .5s;;
+      transition: top .25s, color .25s, left .25s;
     }
 
     textarea:invalid:not(:focus) {
@@ -770,6 +837,14 @@ form {
 
 
 @media screen and (min-width: 800px) {
+  form .inputs {
+    flex-direction: row;
+
+    .input-line {
+      margin-right: 1rem;
+    }
+  }
+
   .flex-container {
     flex-direction: row;
   }
