@@ -2,6 +2,8 @@
   --text: #E4E4E4;
   --theme: #181818;
   --theme-light: #232323;
+  --pink: #EDA2C3;
+  --purple: #081F3F;
 }
 
 body {
@@ -21,6 +23,7 @@ img, amp-img {
 }
 
 img.w-100, amp-img.w-100 {
+  width: 100%;
   min-height: 200px;
   min-width: 200px;
 }
@@ -32,6 +35,9 @@ img[lightbox], amp-img[lightbox] {
 
 .btn {
   cursor: pointer;
+  position: relative;
+  -webkit-transition: border-color .25s;
+  transition: border-color .25s;
 }
 
 .btn, .btn:hover, .btn:active, .btn:visited, .btn:focus, .btn:link {
@@ -58,6 +64,35 @@ img[lightbox], amp-img[lightbox] {
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited, .btn-secondary:focus, .btn-secondary:link {
   background-color: transparent;
   color: var(--text);
+}
+
+.btn b {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  background-color: var(--purple);
+  overflow: hidden;
+  color: var(--text);
+  white-space: nowrap;
+  font-weight: normal;
+  -webkit-transition: width .25s;
+  transition: width .25s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn:hover b {
+  width: calc(100% + 4px);
 }
 
 .btn + .btn {
@@ -413,6 +448,14 @@ amp-list.with-custom-loader .amp-active > div {
   margin-top: 2rem;
 }
 
+.card-top + .card {
+  position: relative;
+  top: -7.5rem;
+  width: calc(100% - 5rem);
+  left: 2.5rem;
+  margin-bottom: -5rem;
+}
+
 .container {
   padding: 1rem;
 }
@@ -457,6 +500,12 @@ nav.card, footer.card {
           justify-content: space-between;
 }
 
+.nav-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .nav-link {
   height: 4rem;
   min-width: 4rem;
@@ -469,6 +518,7 @@ nav.card, footer.card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .nav-link a {
@@ -483,6 +533,30 @@ nav.card, footer.card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-link i {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+}
+
+.nav-link b {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height .25s;
+  transition: height .25s;
+  z-index: 0;
+}
+
+.nav-link:hover b {
+  height: 100%;
 }
 
 .nav-placeholder {
@@ -637,6 +711,10 @@ header .card-content:first-child i {
       flex-flow: wrap;
 }
 
+.project .square {
+  margin-right: 1rem;
+}
+
 .project-mobile {
   margin: 5rem 2rem 5rem 0;
   max-width: 25rem;
@@ -652,10 +730,6 @@ header .card-content:first-child i {
   overflow: hidden;
   border: 3px solid transparent;
   outline: 1px solid transparent;
-  -webkit-transform: translateZ(0) rotateY(20deg);
-          transform: translateZ(0) rotateY(20deg);
-  -webkit-transform-origin: 50% 75%;
-          transform-origin: 50% 75%;
   background-color: #FFFFFF;
 }
 
@@ -734,9 +808,6 @@ form .form-message--success .chip {
 }
 
 form .input-container, form .textarea-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,6 +819,16 @@ form .input-container, form .textarea-container {
 
 form .input-container textarea, form .textarea-container textarea {
   resize: none;
+}
+
+form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 form .input-container {
@@ -763,14 +844,6 @@ form .input-container label {
   transition: top .5s, color .5s, left .5s;
 }
 
-form .input-container:first-child {
-  margin-right: 1rem;
-}
-
-form .input-container:last-child {
-  margin-left: 1rem;
-}
-
 form .input-container input:invalid:not(:focus) + label {
   top: 1.9rem;
   left: 1rem;
@@ -781,24 +854,35 @@ form .input-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 0;
 }
 
 form .textarea-container {
   margin-top: .5rem;
   position: relative;
   padding-top: 1.5rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 0;
 }
 
 form .textarea-container label {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: top .5s, color .5s, left .5s;
-  transition: top .5s, color .5s, left .5s;
+  -webkit-transition: top .25s, color .25s, left .25s;
+  transition: top .25s, color .25s, left .25s;
 }
 
 form .textarea-container textarea:invalid:not(:focus) + label {
@@ -902,6 +986,15 @@ form input#email, form input#name, form textarea {
 }
 
 @media screen and (min-width: 800px) {
+  form .inputs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  form .inputs .input-line {
+    margin-right: 1rem;
+  }
   .flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

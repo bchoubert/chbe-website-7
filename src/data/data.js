@@ -1,10 +1,10 @@
 
 const data = {
   profile: {
+    year: (new Date()).getFullYear(),
     name: 'Bertrand Choubert',
     headline: 'Hi! I\'m Bertrand Choubert, a Web Developer that felt in love with UI Design.',
-    copywrite: 'Building delightful experiences',
-    icon: 'icon icon-bc',
+    icon: 'icon icon-bc-logo',
     resume: `Design, development, management and organization, that is my definition of IT.
 
         By nature, I have perseverance, and I'm rigorous, enthusiastic, never fully satisfied, and always listening. I began web development at 12, which is now my preferred field. I am currently a French CS Engineer. I'm trained to develop innovative websites in modern languages. I train myself with a lot of online trainings, because Front-End technologies change every day.
@@ -67,7 +67,7 @@ const data = {
   certifications: [
     {
       color: '#F5CD0E',
-      icon: 'icon icon-qwiklabs',
+      icon: 'icon icon-qwiklabs-logo',
       organism: 'Qwiklabs / Google',
       title: 'AWS & GCP trainings',
       links: [
@@ -83,7 +83,7 @@ const data = {
     },
     {
       color: '#4CAF50',
-      icon: 'icon icon-google',
+      icon: 'icon icon-google-logo',
       organism: 'Google',
       title: 'Digital Active',
       links: [
@@ -95,7 +95,7 @@ const data = {
     },
     {
       color: '#004079',
-      icon: 'icon icon-cci',
+      icon: 'icon icon-cci-logo',
       organism: 'CCI Lyon',
       title: 'Pass Entrepreneurs',
       links: [
@@ -107,7 +107,7 @@ const data = {
     },
     {
       color: '#F7C948',
-      icon: 'icon icon-livementor-alt2',
+      icon: 'icon icon-livementor-logo-alt',
       organism: 'LiveMentor',
       title: 'Digital Marketing',
       links: [
@@ -119,7 +119,7 @@ const data = {
     },
     {
       color: '#FE541C',
-      icon: 'icon icon-socialmediapro-alt2',
+      icon: 'icon icon-socialmediapro-logo',
       organism: 'Social Media Pro',
       title: 'Digital Marketing & SEO',
       links: [
@@ -131,7 +131,7 @@ const data = {
     },
     {
       color: '#F86201',
-      icon: 'icon icon-scrimba',
+      icon: 'icon icon-scrimba-logo',
       organism: 'Scrimba',
       links: [
         {
@@ -146,7 +146,7 @@ const data = {
     },
     {
       color: '#007BB6',
-      icon: 'icon icon-linkedin-alt',
+      icon: 'icon icon-linkedin-logo-alt',
       organism: 'LinkedIn Learning',
       links: [
         {
@@ -156,19 +156,24 @@ const data = {
       ]
     },
     {
-      color: '#EA5252',
-      icon: 'icon icon-udemy',
-      organism: 'uDemy',
+      color: '#03EF62',
+      icon: 'icon icon-datacamp-logo-alt',
+      organism: 'Datacamp',
+      title: 'Data Processing and Analysis',
       links: [
         {
+          title: 'Profile',
+          link: 'https://www.datacamp.com/profile/bertrandchoubert'
+        },
+        {
           title: 'Certificates',
-          link: 'https://drive.google.com/drive/folders/1RR20bh6OAn0XOFIA3i7cfK2c_xPtiP5Y?usp=sharing'
+          link: 'https://drive.google.com/drive/folders/1kdBbB71BPi1eYixwVytnZ_sKvHWFZn7F?usp=sharing'
         }
       ]
     },
     {
       color: '#0072C5',
-      icon: 'icon icon-microsoft',
+      icon: 'icon icon-microsoft-logo',
       organism: 'Microsoft Learn / MVA',
       links: [
         {
@@ -185,7 +190,7 @@ const data = {
   education: [
     {
       color: '#4CAF50',
-      icon: 'icon icon-google',
+      icon: 'icon icon-google-logo',
       school: 'Google',
       title: 'Mobile Web Specialist',
       description: 'A high-end Front-End web certification, on Performance, Accessibility, advanced Responsiveness and Progressive Web Apps.',
@@ -216,7 +221,7 @@ const data = {
     },
     {
       color: '#A41034',
-      icon: 'icon icon-harvardx-alt',
+      icon: 'icon icon-harvardx-logo',
       school: 'Harvard University (via edX)',
       title: 'CS For Web Programing',
       description: 'A complete 6-month technical program on complex algorithms and advanced functionalities for Website Development',
@@ -247,7 +252,7 @@ const data = {
     },
     {
       color: '#009EE2',
-      icon: 'icon icon-polytech-alt',
+      icon: 'icon icon-polytech-logo',
       school: 'Polytech Lyon',
       title: 'CS Engineer - Master\'s Degree',
       description: 'A French CS Engineer degree which brings all involved tech skills.',
@@ -282,7 +287,7 @@ const data = {
     },
     {
       color: '#FE8800',
-      icon: 'icon icon-universitelyon',
+      icon: 'icon icon-universitelyon-logo',
       school: 'IUT Lyon 1',
       title: 'CS Analyst & Developer',
       description: 'A 2-year University CS degree on complex algorithms and software and web development.',
@@ -318,10 +323,70 @@ const data = {
   ],
   experience: [
     {
+      color: '#FFBF00',
+      lighten: '#FFDD76',
+      darken: '#FFC414',
+      icon: 'icon icon-amalia-logo-alt',
+      company: 'Amalia',
+      title: 'Web Developer',
+      location: 'Lille, FR and Remote',
+      contract: 'Long-Term',
+      dates: {
+        start: 'Sept 2020',
+        end: 'Current',
+        yEnd: 'Current'
+      },
+      projects: [
+        {
+          name: 'Amalia.io',
+          icon: 'icon icon-amalia-logo',
+          description: 'Real-time sales performance management software'
+        }
+      ],
+      tasks: [
+        'Setuped and improved E2E, unit and component testing processes',
+        'Developped reusable and standardized complex components',
+        'Enhanced performance using Redux, custom hooks and best practices',
+        'Participated in UI/UX reviews and technical design',
+        'Increased code quality, to provide better maintenance and security'
+      ],
+      mainTechnologies: [
+        {
+          icon: 'icon icon-javascript-logo-alt',
+          title: 'NodeJS / NestJS'
+        },
+        {
+          icon: 'icon icon-react-logo',
+          title: 'React'
+        },
+        {
+          icon: 'icon icon-redux-logo',
+          title: 'Redux'
+        },
+        {
+          icon: 'icon icon-postgre-logo',
+          title: 'PostgreSQL'
+        },
+        {
+          icon: 'icon icon-typescript-logo',
+          title: 'TypeScript'
+        },
+        {
+          icon: 'icon icon-cypress-logo-alt',
+          title: 'Cypress'
+        },
+        {
+          icon: 'icon icon-mathjs-full',
+          title: 'MathJS'
+        }
+      ],
+      otherTechnologies: []
+    },
+    {
       color: '#113885',
       lighten: '#1d5edf',
       darken: '#05122b',
-      icon: 'icon icon-logtrack',
+      icon: 'icon icon-logtrack-logo',
       company: 'Independent',
       title: 'Web Developer',
       location: 'Remote',
@@ -333,8 +398,8 @@ const data = {
       },
       projects: [
         {
-          name: 'LogTrack',
-          icon: 'icon icon-logtrack',
+          name: 'LogTrack.app',
+          icon: 'icon icon-logtrack-logo',
           description: 'Complete Saas Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...'
         }
       ],
@@ -349,20 +414,32 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-firebase',
-          title: 'Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions'
+          icon: 'icon icon-firebase-logo-alt',
+          title: 'Firebase'
         },
         {
-          icon: 'icon icon-react',
+          icon: 'icon icon-postgre-logo',
+          title: 'PostgreSQL'
+        },
+        {
+          icon: 'icon icon-react-logo',
           title: 'React'
         },
         {
-          icon: 'icon icon-openlayers',
+          icon: 'icon icon-openlayers-logo',
           title: 'OpenLayers'
         },
         {
-          icon: 'icon icon-sass-alt',
+          icon: 'icon icon-sass-logo',
           title: 'Sass'
+        },
+        {
+          icon: 'icon icon-adonis-logo',
+          title: 'Adonis'
+        },
+        {
+          icon: 'icon icon-docker-logo-alt',
+          title: 'Docker'
         }
       ],
       otherTechnologies: []
@@ -371,7 +448,7 @@ const data = {
       color: '#FF2222',
       lighten: '#ff8888',
       darken: '#bb0000',
-      icon: 'icon icon-tc-gannay-alt',
+      icon: 'icon icon-tc-gannay-logo',
       company: 'TC Gannay',
       title: 'Graphic & UI Designer',
       location: 'Remote',
@@ -384,12 +461,12 @@ const data = {
       projects: [
         {
           name: 'Logo & Color Scheme Creation',
-          icon: 'icon icon-tc-gannay',
+          icon: 'icon icon-tc-gannay-logo',
           description: 'New logo for this sportive association'
         },
         {
           name: 'Website prototype',
-          icon: 'icon icon-tc-gannay',
+          icon: 'icon icon-tc-gannay-full',
           description: ''
         }
       ],
@@ -402,11 +479,11 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-xd',
+          icon: 'icon icon-xd-logo',
           title: 'Adobe Xd'
         },
         {
-          icon: 'icon icon-inkscape',
+          icon: 'icon icon-inkscape-logo',
           title: 'Inkscape'
         }
       ],
@@ -416,7 +493,7 @@ const data = {
       color: '#0062AE',
       lighten: '#1599ff',
       darken: '#002948',
-      icon: 'icon icon-sogelink-alt',
+      icon: 'icon icon-sogelink-logo-alt',
       company: 'Sogelink',
       title: 'UI Designer & R&D Full-Stack Web Developer',
       location: 'Lyon, FR',
@@ -429,12 +506,12 @@ const data = {
       projects: [
         {
           name: 'Maplink',
-          icon: 'icon icon-maplink-alt2',
+          icon: 'icon icon-maplink-logo-alt',
           description: 'Maplink is both a map component integrated into DICT.fr and a Network and Urban Properties Management Solution'
         },
         {
           name: 'GeoSnap',
-          icon: 'icon icon-geosnap-alt',
+          icon: 'icon icon-geosnap-logo',
           description: 'Surveyor / Topography productivity Saas Solution'
         }
       ],
@@ -451,45 +528,45 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-angular',
+          icon: 'icon icon-angular-logo',
           title: 'Angular'
         },
         {
-          icon: 'icon icon-spring',
+          icon: 'icon icon-spring-logo',
           title: 'Java Spring'
         },
         {
-          icon: 'icon icon-git',
+          icon: 'icon icon-git-logo',
           title: 'Advanced Git'
         },
         {
-          icon: 'icon icon-python',
+          icon: 'icon icon-python-logo',
           title: 'Python'
         },
         {
-          icon: 'icon icon-typescript',
+          icon: 'icon icon-typescript-logo',
           title: 'TypeScript'
         }
       ],
       otherTechnologies: [
         {
-          icon: 'icon icon-gitlab',
+          icon: 'icon icon-gitlab-logo-alt',
           title: 'GitLab CI'
         },
         {
-          icon: 'icon icon-three',
+          icon: 'icon icon-three-logo',
           title: 'ThreeJS'
         },
         {
-          icon: 'icon icon-babylon-alt',
+          icon: 'icon icon-babylon-logo-alt',
           title: 'BabylonJS'
         },
         {
-          icon: 'icon icon-protoio-alt',
+          icon: 'icon icon-protoio-logo',
           title: 'ProtoIO'
         },
         {
-          icon: 'icon icon-anydwg',
+          icon: 'icon icon-anydwg-logo',
           title: 'AnyDWG'
         }
       ]
@@ -498,7 +575,7 @@ const data = {
       color: '#FF6640',
       lighten: '#ffb8a6',
       darken: '#d92b00',
-      icon: 'icon icon-maincare-alt',
+      icon: 'icon icon-maincare-logo',
       company: 'Maincare Solutions',
       title: 'Web Developer & UI Designer',
       location: 'Lyon, FR',
@@ -511,7 +588,7 @@ const data = {
       projects: [
         {
           name: 'IdeoMed / IdeoSanté',
-          icon: 'icon icon-ideomed',
+          icon: 'icon icon-ideomed-logo',
           description: 'Product range that equips 80% of French hospitals to help them to manage health profiles, pills stock...'
         }
       ],
@@ -522,15 +599,15 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-java',
+          icon: 'icon icon-java-logo',
           title: 'Java EE'
         },
         {
-          icon: 'icon icon-backbone',
+          icon: 'icon icon-backbone-logo',
           title: 'BackboneJS'
         },
         {
-          icon: 'icon icon-bootstrap',
+          icon: 'icon icon-bootstrap-logo',
           title: 'Bootstrap'
         }
       ],
@@ -540,7 +617,7 @@ const data = {
       color: '#edcd40',
       lighten: '#ffeec3',
       darken: '#f6b000',
-      icon: 'icon icon-vdsconsulting-alt',
+      icon: 'icon icon-vdsconsulting-logo',
       company: 'VDS Consulting',
       title: 'Web Developer, UI Designer & Branding',
       location: 'Remote',
@@ -553,32 +630,32 @@ const data = {
       projects: [
         {
           name: 'Brussels Aquariums',
-          icon: 'icon icon-brusselsaquariums',
+          icon: 'icon icon-brusselsaquariums-logo',
           description: 'Complete e-commerce solution'
         },
         {
           name: 'F@ctorio',
-          icon: 'icon icon-factorio',
+          icon: 'icon icon-factorio-logo',
           description: 'Transparent factoring tool'
         },
         {
           name: 'VDS Consulting Website',
-          icon: 'icon icon-vdsconsulting-alt',
+          icon: 'icon icon-vdsconsulting-logo',
           description: 'Showcase Website'
         },
         {
           name: 'Find an Umbrella',
-          icon: 'icon icon-findanumbrella',
+          icon: 'icon icon-findanumbrella-logo',
           description: 'Find umbrella companies all over the world'
         },
         {
           name: 'CV-Broker',
-          icon: 'icon icon-cvbroker',
+          icon: 'icon icon-cvbroker-logo',
           description: 'Full management website for recruiters and companies'
         },
         {
           name: 'My Landlord Club',
-          icon: 'icon icon-mylandlordclub',
+          icon: 'icon icon-mylandlordclub-logo',
           description: 'Real-estate crowd-funding'
         }
       ],
@@ -594,41 +671,41 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-symfony-alt',
+          icon: 'icon icon-symfony-logo-alt',
           title: 'Symfony'
         },
         {
-          icon: 'icon icon-java',
+          icon: 'icon icon-java-logo',
           title: 'Java'
         },
         {
-          icon: 'icon icon-spring',
+          icon: 'icon icon-spring-logo',
           title: 'Spring'
         },
         {
-          icon: 'icon icon-nodejs',
+          icon: 'icon icon-nodejs-logo',
           title: 'NodeJS Express'
         },
         {
-          icon: 'icon icon-livecycle',
+          icon: 'icon icon-livecycle-logo',
           title: 'Adobe LiveCycle'
         },
       ],
       otherTechnologies: [
         {
-          icon: 'icon icon-bootstrap',
+          icon: 'icon icon-bootstrap-logo',
           title: 'Bootstrap'
         },
         {
-          icon: 'icon icon-mdbootstrap',
+          icon: 'icon icon-mdbootstrap-logo',
           title: 'MDBootstrap'
         },
         {
-          icon: 'icon icon-sass-alt',
+          icon: 'icon icon-sass-logo-alt',
           title: 'Sass'
         },
         {
-          icon: 'icon icon-leaflet',
+          icon: 'icon icon-leaflet-logo',
           title: 'Leaflet'
         }
       ]
@@ -637,7 +714,7 @@ const data = {
       color: '#90A9A9',
       ligthen: '#c9d6d6',
       darken: '#5c7777',
-      icon: 'icon icon-iunex-alt',
+      icon: 'icon icon-iunex-type',
       company: 'Iunex Group',
       title: 'Web & Chrome Extension Developer',
       location: 'Remote',
@@ -650,17 +727,17 @@ const data = {
       projects: [
         {
           name: 'Rate Job Offer',
-          icon: 'icon icon-rjo',
+          icon: 'icon icon-rjo-logo',
           description: 'Inventive Chrome Extension to find a job'
         },
         {
           name: 'Crazy Tips Work',
-          icon: 'icon icon-ctw',
+          icon: 'icon icon-crazytips-full',
           description: 'Comment and discuss on job offers have never been so simple'
         },
         {
           name: 'Crazy Tips',
-          icon: 'icon icon-crazytips',
+          icon: 'icon icon-crazytips-full',
           description: 'Innovative solution for discussing about real-estate investments and offers'
         }
       ],
@@ -674,21 +751,21 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-php',
+          icon: 'icon icon-php-logo',
           title: 'PHP'
         },
         {
-          icon: 'icon icon-chrome',
+          icon: 'icon icon-chrome-logo',
           title: 'Chrome Extension'
         },
         {
-          icon: 'icon icon-javascript-alt',
+          icon: 'icon icon-javascript-logo-alt',
           title: 'JavaScript'
         }
       ],
       otherTechnologies: [
         {
-          icon: 'icon icon-mysql',
+          icon: 'icon icon-mysql-logo',
           title: 'MySQL'
         }
       ]
@@ -697,7 +774,7 @@ const data = {
       color: '#DD7520',
       lighten: '#ebac78',
       darken: '#844613',
-      icon: 'icon icon-braytonglobal-alt',
+      icon: 'icon icon-braytonglobal-logo-alt',
       company: 'Brayton Global',
       title: 'Lead Web Developer',
       location: 'Antwerp, BE then Remote',
@@ -710,12 +787,12 @@ const data = {
       projects: [
         {
           name: 'Vemasys',
-          icon: 'icon icon-vemasys-alt',
+          icon: 'icon icon-vemasys-logo',
           description: 'The new era of Vessel Management - Fluvial / Inland Vessel ERP'
         },
         {
           name: 'SkillMatrix',
-          icon: 'icon icon-skillmatrix-alt',
+          icon: 'icon icon-skillmatrix-logo',
           description: 'Smart Applicant Tracking System for recruitment companies'
         }
       ],
@@ -727,25 +804,25 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-symfony-alt',
+          icon: 'icon icon-symfony-logo-alt',
           title: 'Symfony'
         },
         {
-          icon: 'icon icon-bootstrap',
+          icon: 'icon icon-bootstrap-logo',
           title: 'Bootstrap'
         },
         {
-          icon: 'icon icon-jquery',
+          icon: 'icon icon-jquery-logo',
           title: 'jQuery'
         }
       ],
       otherTechnologies: [
         {
-          icon: 'icon icon-mysql',
+          icon: 'icon icon-mysql-logo',
           title: 'MySQL'
         },
         {
-          icon: 'icon icon-trello',
+          icon: 'icon icon-trello-logo',
           title: 'Trello'
         }
       ]
@@ -754,7 +831,7 @@ const data = {
       color: '#3BBCD8',
       lighten: '#90d9e9',
       darken: '#1d7c90',
-      icon: 'icon icon-cityzendesk',
+      icon: 'icon icon-cityzendesk-logo',
       company: 'CityZenDesk',
       title: 'Mobile App Tester',
       location: 'Lyon, FR',
@@ -767,7 +844,7 @@ const data = {
       projects: [
         {
           name: 'CityZenDesk',
-          icon: 'icon icon-cityzendesk',
+          icon: 'icon icon-cityzendesk-logo',
           description: 'The multifunctional app created to ease your daily life in your city and at home'
         }
       ],
@@ -778,7 +855,7 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-testflight',
+          icon: 'icon icon-testflight-logo',
           title: 'TestFlight'
         }
       ],
@@ -788,7 +865,7 @@ const data = {
       color: '#A32428',
       lighten: '#d95458',
       darken: '#4f1213',
-      icon: 'icon icon-cnh',
+      icon: 'icon icon-cnh-full',
       company: 'CNH Industrial',
       title: 'Software Developer',
       location: 'Bourbon-Lancy, FR',
@@ -801,7 +878,7 @@ const data = {
       projects: [
         {
           name: 'CNH traceability tool',
-          icon: 'icon icon-cnh',
+          icon: 'icon icon-cnh-full',
           description: 'New software involving PMS, SAP and operators'
         }
       ],
@@ -817,11 +894,11 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-windev-alt',
+          icon: 'icon icon-windev-logo',
           title: 'WinDev'
         },
         {
-          icon: 'icon icon-hfsql-alt',
+          icon: 'icon icon-hfsql-logo',
           title: 'HFSQL Database'
         }
       ],
@@ -830,7 +907,7 @@ const data = {
       color: '#0683B9',
       lighten: '#2dbbf8',
       darken: '#033d56',
-      icon: 'icon icon-ain',
+      icon: 'icon icon-ain-full',
       company: 'Archives Départementales de l\'Ain',
       title: 'Lead Web Developer',
       location: 'Bourg-en-Bresse, FR',
@@ -843,7 +920,7 @@ const data = {
       projects: [
         {
           name: 'Project Centenaire 14/18',
-          icon: 'icon icon-ain',
+          icon: 'icon icon-ain-full',
           description: 'Award-winning website that presents in an innovative way data from World War 1'
         }
       ],
@@ -855,25 +932,25 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-php',
+          icon: 'icon icon-php-logo',
           title: 'PHP'
         },
         {
-          icon: 'icon icon-javascript-alt',
+          icon: 'icon icon-javascript-logo-alt',
           title: 'JavaScript'
         },
         {
-          icon: 'icon icon-google-maps',
+          icon: 'icon icon-google-maps-logo',
           title: 'Google Maps API'
         }
       ],
       otherTechnologies: [
         {
-          icon: 'icon icon-jquery',
+          icon: 'icon icon-jquery-logo',
           title: 'jQuery'
         },
         {
-          icon: 'icon icon-mysql',
+          icon: 'icon icon-mysql-logo',
           title: 'MySQL'
         }
       ]
@@ -883,21 +960,21 @@ const data = {
     {
       id: 'LinkedIn',
       color: '#0077B5',
-      icon: 'icon icon-linkedin-alt',
+      icon: 'icon icon-linkedin-logo-alt',
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/chbefr/'
     },
     {
       id: 'Dribbble',
       color: '#E44A86',
-      icon: 'icon icon-dribbble',
+      icon: 'icon icon-dribbble-logo',
       name: 'Dribbble',
       link: 'http://bchoubert.dribbble.com/'
     },
     {
       id: 'GitHub',
-      color: '#24292E',
-      icon: 'icon icon-github',
+      color: '#7B7E81',
+      icon: 'icon icon-github-logo',
       name: 'GitHub',
       link: 'https://github.com/bchoubert'
     },
@@ -907,12 +984,13 @@ const data = {
       key: 'CV',
       title: 'Crypto Viewer',
       description: 'Mobile App to track crypto-currencies & your assets',
+      top: '/resources/img/projects/CV/top.jpg',
       fullDescription: `<span>
         Crypto-Viewer is a utility app to track your favourite crypto-currencies. It's fast, secure, customizable...<br/>
         By adding your current assets, you can track your wallet value at everytime. You have also access to a pratcical set of tools to watch for current and past values of a crypto-currency.
       </span>`,
       wip: false,
-      icon: 'icon icon-crypto-viewer',
+      icon: 'icon icon-crypto-viewer-logo',
       color: '#1543E4',
       lighten: '#6d8bf2',
       darken: '#0c2887',
@@ -922,32 +1000,32 @@ const data = {
       dribbbleProject: 1948460,
       links: [
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/crypto-viewer',
           title: 'GitHub'
         },
         {
-          icon: 'icon icon-playstore',
+          icon: 'icon icon-playstore-logo',
           link: 'https://play.google.com/store/apps/details?id=com.bchoubert.cryptoviewer',
           title: 'Play Store'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/1948460-Crypto-Viewer-App',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-react-native',
+          icon: 'icon icon-react-native-logo',
           title: 'React Native'
         },
         {
-          icon: 'icon icon-expo',
+          icon: 'icon icon-expo-logo',
           title: 'Expo'
         },
         {
-          icon: 'icon icon-typescript',
+          icon: 'icon icon-typescript-logo',
           title: 'TypeScript'
         }
       ],
@@ -955,7 +1033,7 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content my">
-            <i class="icon icon-crypto-viewer" style="font-size: 5rem"></i>
+            <i class="icon icon-crypto-viewer-logo" style="font-size: 5rem"></i>
             <span class="center-content my">Crypto-Viewer is a light-weight crypto tracker.</span>
             <a href="https://play.google.com/store/apps/details?id=com.bchoubert.cryptoviewer" target="_blank" rel="noopener noreferrer">
               <amp-img width="162" height="55" src="/resources/img/projects/CV/googleplay.png" style="height: 3rem"></amp-img>
@@ -989,7 +1067,7 @@ const data = {
           </div>
           <div class="flex-container my">
             <span class="fl1 center-content">
-              <i class="icon icon-crypto-viewer" style="font-size: 5rem"></i><br/>
+              <i class="icon icon-crypto-viewer-logo" style="font-size: 5rem"></i><br/>
               <span>Crypto-Viewer</span>
             </span>            
           </div>`
@@ -1087,23 +1165,23 @@ const data = {
           title: 'Technologies',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-react-native"></i></span>
+              <span class="indicator"><i class="icon icon-react-native-logo"></i></span>
               <span>React Native<span class="ssub d-block">A good framework for cross-platform apps</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-typescript"></i></span>
+              <span class="indicator"><i class="icon icon-typescript-logo"></i></span>
               <span>TypeScript<span class="ssub d-block">Strongly typed apps</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-expo"></i></span>
+              <span class="indicator"><i class="icon icon-expo-logo"></i></span>
               <span>Expo<span class="ssub d-block">A set of pre-defined components and powerful tools</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-victory"></i></span>
+              <span class="indicator"><i class="icon icon-victory-logo"></i></span>
               <span>Victory Chart Native<span class="ssub d-block">A powerful library for interative graphs</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-moment"></i></span>
+              <span class="indicator"><i class="icon icon-moment-logo"></i></span>
               <span>Moment JS<span class="ssub d-block">A versatile library to manage datetimes</span></span>
             </div>
           </div>`
@@ -1129,7 +1207,7 @@ const data = {
           title: 'APIs',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-coinbase"></i></span>
+              <span class="indicator"><i class="icon icon-coinbase-type"></i></span>
               <span>Coinbase & Coinbase Pro APIs<span class="ssub d-block">A market reference for crypto-currencies</span></span>
             </div>
           </div>`
@@ -1162,6 +1240,7 @@ const data = {
     {
       key: 'AD',
       title: 'Air-Data',
+      top: '/resources/img/projects/AD/top.jpg',
       description: 'Airlines Data Viewer with 800+ companies and 10,000+ routes',
       fullDescription: `<span>
         Air-Data is a one-of-a-kind project.<br/>
@@ -1169,7 +1248,7 @@ const data = {
         Air-Data is a convenient way to have a global look and understanding of worldwide air-related data, all along with every airport, airline, and operated flights for each airline.
       </span>`,
       wip: false,
-      icon: 'icon icon-air-data',
+      icon: 'icon icon-air-data-logo',
       color: '#FF4500',
       lighten: '#ff8f66',
       darken: '#992900',
@@ -1179,12 +1258,12 @@ const data = {
       dribbbleProject: 2015636,
       links: [
         {
-          icon: 'icon icon-codesandbox',
+          icon: 'icon icon-codesandbox-logo',
           link: 'https://codesandbox.io/s/k044n51lk5',
           title: 'CodeSandbox'
         },
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/air-data',
           title: 'GitHub'
         },
@@ -1194,26 +1273,26 @@ const data = {
           title: 'Live version'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/2015636-Air-Data',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-firebase',
+          icon: 'icon icon-firebase-logo-alt',
           title: 'Firebase Real-Time Database'
         },
         {
-          icon: 'icon icon-vuejs-alt',
+          icon: 'icon icon-vuejs-logo',
           title: 'VueJS'
         },
         {
-          icon: 'icon icon-leaflet',
+          icon: 'icon icon-leaflet-logo',
           title: 'Leaflet'
         },
         {
-          icon: 'icon icon-qgis',
+          icon: 'icon icon-qgis-logo',
           title: 'QGis'
         }
       ],
@@ -1221,16 +1300,18 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content">
-            <i class="icon icon-air-data" style="color: #FF4500; font-size: 5rem"></i>
+            <i class="icon icon-air-data-logo" style="color: #FF4500; font-size: 5rem"></i>
             <h2 style="text-align: center">Air-Data</h2>
             <span class="my d-block">Airlines data viewer with 800+ companies and 10,000+ routes</span>
-            <amp-img class="w-100" width="1280" height="853" layout="responsive" src="/resources/img/projects/AD/pres.jpg" lightbox></amp-img>
+            <div class="flex-container my">
+              <amp-img class="fl1 w-100" width="1280" height="853" layout="responsive" src="/resources/img/projects/AD/pres.jpg" lightbox></amp-img>
+            </div>
           </div>`
         },
         {
           title: 'Branding',
           content: `<div class="content center-content">
-            <i class="icon icon-air-data" style="font-size: 5rem"></i>
+            <i class="icon icon-air-data-logo" style="font-size: 5rem"></i>
             <span>Plane take-off<span class="ssub d-block">Font-Awesome icon, slightly modified</span></span>
           </div>`
         },
@@ -1280,7 +1361,7 @@ const data = {
         {
           title: 'Final Logo',
           content: `<div class="content center-content my">
-            <i class="icon icon-air-data" style="color: #FF4500; font-size: 5rem"></i>
+            <i class="icon icon-air-data-logo" style="color: #FF4500; font-size: 5rem"></i>
           </div>`
         },
         {
@@ -1329,15 +1410,15 @@ const data = {
           title: 'Technologies',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-vuejs-alt"></i></span>
+              <span class="indicator"><i class="icon icon-vuejs-logo"></i></span>
               <span>VueJS<span class="ssub d-block">A versatile Front-End Framework</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-codesandbox"></i></span>
+              <span class="indicator"><i class="icon icon-codesandbox-logo"></i></span>
               <span>Code Sandbox<span class="ssub d-block">An online IDE and runtime for web development</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-firebase"></i></span>
+              <span class="indicator"><i class="icon icon-firebase-logo-alt"></i></span>
               <span>Firebase Real-Time database<span class="ssub d-block">An online and optimized document-based database</span></span>
             </div>
             <div class="indicator-parent my">
@@ -1345,7 +1426,7 @@ const data = {
               <span>Font Awesome Pro<span class="ssub d-block">High-quality icons</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-leaflet"></i></span>
+              <span class="indicator"><i class="icon icon-leaflet-logo"></i></span>
               <span>Leaflet + Leaflet Marker Cluster<span class="ssub d-block">Leaflet is a JS library for interactive maps<br/>
                 Leaflet Marker Cluster is an official addin to Leaflet and permits to group airlines into the same marker on lower zoom levels.</span></span>
             </div>
@@ -1423,54 +1504,55 @@ const data = {
     {
       key: 'BCF',
       title: 'BC-Font',
-      description: 'The Developer Font with 1,000+ icons',
+      description: 'The Developer Font with 1,200+ icons',
+      top: '/resources/img/projects/BCF/top.jpg',
       fullDescription: `<span>
         BC-Font is an easy-to-use, high-quality and more globally a must-have font for IT workers, specially developers.<br/>
-        With more than 1,000 icons separated into 27 categories, this product is available for every use: Desktop font, Web, Print, Design...<br/>
+        With more than 1,200 icons separated into 27 categories, this product is available for every use: Desktop font, Web, Print, Design...<br/>
         This font comes with a handy website that permits you to find the ideal icons for your project.
       </span>`,
       wip: false,
-      icon: 'icon icon-bcfont-alt',
+      icon: 'icon icon-bcfont-logo',
       color: '#EA2834',
-      lighten: '#f3858c',
-      darken: '#9d0f18',
+      lighten: '#F3858C',
+      darken: '#9D0F18',
       mobile: '/resources/img/projects/BCF/mobile.png',
       mobileProps: { width: 540, height: 1140 },
       tags: ['Icon_Font', 'Automatic_Build'],
       dribbbleProject: 1948450,
       links: [
         {
-          icon: 'icon icon-npm-alt',
+          icon: 'icon icon-npm-logo',
           link: 'https://www.npmjs.com/package/bc-font',
           title: 'Npm Package'
         },
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/bc-font',
           title: 'GitHub'
         },
         {
           icon: 'icon icon-globe',
-          link: 'https://bchoubert.github.io/bc-font/',
+          link: 'https://bchoubert.github.io/bc-font-website/',
           title: 'Live version'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/1948450-BC-Font',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-gimp',
+          icon: 'icon icon-gimp-logo',
           title: 'Gimp'
         },
         {
-          icon: 'icon icon-webpack',
+          icon: 'icon icon-webpack-logo',
           title: 'Webpack'
         },
         {
-          icon: 'icon icon-inkscape',
+          icon: 'icon icon-inkscape-logo',
           title: 'Inkscape'
         }
       ],
@@ -1478,7 +1560,7 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content my">
-            <i class="icon icon-bcfont-alt" style="font-size: 5rem"></i>
+            <i class="icon icon-bcfont-logo" style="font-size: 5rem"></i>
             <span class="my">The font for IT Professionals</span>
             <span>
               <a href="https://github.com/bchoubert/bc-font" style="margin: 0 1rem" target="_blank" rel="noopener noreferrer">
@@ -1493,14 +1575,18 @@ const data = {
             <amp-img layout="responsive" class="fl1 w-100" width="1211" height="682" src="/resources/img/projects/BCF/pres-1.jpg" lightbox></amp-img>
           </div>
           <div class="content center-content my">
-            1,005* icons.<br/><br/>
+            1,269* icons.<br/><br/>
             27* categories.<br/><br/>
+            3 icon types.<br/><br/>
             For all your needs.<br/><br/>
             Available for Desktop, Web, Print, Design...<br/><br/>
-            <span class="ssub">(* as of 1.8.0 version)</span>
+            <span class="ssub">(* as of 2.3.2 version)</span>
           </div>
           <div class="flex-container my">
             <amp-img class="w-100 fl1" layout="responsive" width="1280" height="853" src="/resources/img/projects/BCF/pres-2.jpg" lightbox></amp-img>
+          </div>
+          <div class="flex-container my">
+            <amp-img class="w-100 fl1" layout="responsive" width="1280" height="853" src="/resources/img/projects/BCF/pres-3.jpg" lightbox></amp-img>
           </div>`
         },
         {
@@ -1572,7 +1658,7 @@ const data = {
               <span>Website Font<span class="ssub d-block">Roboto - Google Fonts</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-bcfont-alt"></i></span>
+              <span class="indicator"><i class="icon icon-bcfont-logo"></i></span>
               <span>BC-Font icons<span class="ssub d-block">BC-Font package</span></span>
             </div>
           </div>`
@@ -1592,11 +1678,11 @@ const data = {
           title: 'Final logo',
           content: `<div class="flex-container">
             <div class="fl1 center-content">
-              <i class="icon icon-bcfont" style="font-size: 5rem; color: #EB2834"></i>
+              <i class="icon icon-bcfont-full" style="font-size: 5rem; color: #EB2834"></i>
               <span class="my">Full-Size Logo</span>
             </div>
             <div class="fl1 center-content">
-              <i class="icon icon-bcfont-alt" style="font-size: 5rem; color: #EB2834"></i>
+              <i class="icon icon-bcfont-logo" style="font-size: 5rem; color: #EB2834"></i>
               <span class="my">Simplified Logo</span>
             </div>
           </div>`
@@ -1617,7 +1703,7 @@ const data = {
         {
           title: 'Technologies',
           content: `<div class="indicator-parent my">
-            <span class="indicator"><i class="icon icon-webpack"></i></span>
+            <span class="indicator"><i class="icon icon-webpack-logo"></i></span>
             <span>Webpack
               <span class="sub d-block">
                 With an incredible choice of loaders, WebPack bundles any web application / JS files. Here, following loaders are used:
@@ -1701,6 +1787,7 @@ const data = {
     {
       key: 'VV',
       title: 'Velo\'v',
+      top: '/resources/img/projects/VV/top.jpg',
       description: 'Deep analysis of French renting bike company',
       fullDescription: `<span>
         This website presents both an advanced real-time analysis and a business intelligence analysis of the Velo'v bike-sharing network.<br/>
@@ -1708,7 +1795,7 @@ const data = {
         You can see all the stations status and district stats at a glance, as well as the high-fidelity results of the Business Intelligence analysis.
       </span>`,
       wip: false,
-      icon: 'icon icon-velov',
+      icon: 'icon icon-velov-logo-alt',
       color: '#BF1410',
       lighten: '#ef4945',
       darken: '#610a08',
@@ -1718,7 +1805,7 @@ const data = {
       dribbbleProject: 1984459,
       links: [
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/bi-velov/',
           title: 'GitHub'
         },
@@ -1728,30 +1815,30 @@ const data = {
           title: 'Live version'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/1984459-Velo-v-Business-Intelligence',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-jquery',
+          icon: 'icon icon-jquery-logo',
           title: 'jQuery'
         },
         {
-          icon: 'icon icon-chartjs',
+          icon: 'icon icon-chartjs-logo',
           title: 'ChartJS'
         },
         {
-          icon: 'icon icon-leaflet',
+          icon: 'icon icon-leaflet-logo',
           title: 'Leaflet'
         },
         {
-          icon: 'icon icon-talend-alt',
+          icon: 'icon icon-talend-logo',
           title: 'Talend ETL'
         },
         {
-          icon: 'icon icon-qliksense',
+          icon: 'icon icon-qliksense-logo',
           title: 'Qlik Sense'
         }
       ],
@@ -1759,7 +1846,7 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content">
-            <i class="icon icon-velov-alt" style="font-size: 15rem"></i>
+            <i class="icon icon-velov-logo-alt" style="font-size: 15rem"></i>
             <h3 style="text-align: center" class="my">BI - Velo'v</h3>
           </div>
           <div class="flex-container my">
@@ -1789,11 +1876,11 @@ const data = {
           title: 'Branding',
           content: `<div class="flex-container my">
             <div class="fl1 center-content my">
-              <i class="icon icon-velov-alt" style="font-size: 5rem"></i>
+              <i class="icon icon-velov-logo-alt" style="font-size: 5rem"></i>
               <span>Official Velo'v Logo</span>
             </div>
             <div class="fl1 center-content my">
-              <i class="icon icon-velov-alt2" style="font-size: 5rem"></i>
+              <i class="icon icon-velov-logo" style="font-size: 5rem"></i>
               <span>Official Simplified Velo'v Logo</span>
             </div>
           </div>`
@@ -1878,19 +1965,19 @@ const data = {
           title: 'Station Status',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator" style="background-color: #00AA32; color: white"><i class="icon icon-velov"></i></span>
+              <span class="indicator" style="background-color: #00AA32; color: white"><i class="icon icon-velov-logo-alt"></i></span>
               <span>Opened Station</span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator" style="background-color: #FFE60B; color: white"><i class="icon icon-velov"></i></span>
+              <span class="indicator" style="background-color: #FFE60B; color: white"><i class="icon icon-velov-logo-alt"></i></span>
               <span>Full Station</span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator" style="background-color: #FFAA00; color: white"><i class="icon icon-velov"></i></span>
+              <span class="indicator" style="background-color: #FFAA00; color: white"><i class="icon icon-velov-logo-alt"></i></span>
               <span>Empty Station</span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator" style="background-color: #FF0000; color: white"><i class="icon icon-velov"></i></span>
+              <span class="indicator" style="background-color: #FF0000; color: white"><i class="icon icon-velov-logo-alt"></i></span>
               <span>Closed Station</span>
             </div>
           </div>`
@@ -1938,19 +2025,19 @@ const data = {
           title: 'Technologies',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-jquery"></i></span>
+              <span class="indicator"><i class="icon icon-jquery-logo"></i></span>
               <span>jQuery<span class="ssub d-block">Fast, small and feature-rich JavaScript library</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-chartjs"></i></span>
+              <span class="indicator"><i class="icon icon-chartjs-logo"></i></span>
               <span>ChartJS<span class="ssub d-block">Simple, clean and engaging JavaScript charts</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-leaflet"></i></span>
+              <span class="indicator"><i class="icon icon-leaflet-logo"></i></span>
               <span>Leaflet<span class="ssub d-block">Library for interactive maps</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-mdbootstrap"></i></span>
+              <span class="indicator"><i class="icon icon-mdbootstrap-logo"></i></span>
               <span>MDBootstrap<span class="ssub d-block">Most popular framework for building responsive websites</span></span>
             </div>
           </div>`
@@ -1963,7 +2050,7 @@ const data = {
               <span>JC Decaux<span class="ssub d-block">Real-Time updated API for Velo'v network status</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-openweather"></i></span>
+              <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
               <span>Open Weather API<span class="ssub d-block">Real-Time weather</span></span>
             </div>
           </div>`
@@ -1999,27 +2086,27 @@ const data = {
               <span>Data Fetching<span class="ssub d-block">PHP with Curl Script</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-mysql"></i></span>
+              <span class="indicator"><i class="icon icon-mysql-logo"></i></span>
               <span>Database<span class="ssub d-block">MySQL - 3.6 M lines</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-talend-alt"></i></span>
+              <span class="indicator"><i class="icon icon-talend-logo"></i></span>
               <span>Data Transformation<span class="ssub d-block">Talend ETL</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-sql"></i></span>
+              <span class="indicator"><i class="icon icon-sql-logo"></i></span>
               <span>Transformation Scripts<span class="ssub d-block">SQL scripts</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-qliksense"></i></span>
+              <span class="indicator"><i class="icon icon-qliksense-logo"></i></span>
               <span>Data Visualization<span class="ssub d-block">Qlik Sense</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-javascript-alt"></i></span>
+              <span class="indicator"><i class="icon icon-javascript-logo-alt"></i></span>
               <span>Chart Transformation<span class="ssub d-block">JavaScript</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-chartjs"></i></span>
+              <span class="indicator"><i class="icon icon-chartjs-logo"></i></span>
               <span>Chart Integration<span class="ssub d-block">ChartJS</span></span>
             </div>
           </div>`
@@ -2108,12 +2195,13 @@ const data = {
       key: 'ZB',
       title: 'Zest Bank',
       description: 'Refreshing Online Bank Concept',
+      top: '/resources/img/projects/ZB/top.jpg',
       fullDescription: `<span>
         ZestBank is a branding concept of the modern bank, according to me.<br/>
         Managing your services, cards and funds online or via the app, and choose your ZestCard from the three plans.
       </span>`,
       wip: false,
-      icon: 'icon icon-zestbank',
+      icon: 'icon icon-zestbank-logo',
       color: '#F87C00',
       lighten: '#ffaf5f',
       darken: '#924900',
@@ -2123,14 +2211,14 @@ const data = {
       tags: ['Branding', 'UI'],
       links: [
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/1923106-Zest-Bank-Concept',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-xd',
+          icon: 'icon icon-xd-logo',
           title: 'Adobe XD'
         }
       ],
@@ -2139,7 +2227,7 @@ const data = {
           title: 'Presentation',
           content: `<div class="content">
             <div class="content center-content">
-              <i class="icon icon-zestbank-alt" style="font-size: 10rem; color: #F87C00"></i>
+              <i class="icon icon-zestbank-full" style="font-size: 10rem; color: #F87C00"></i>
             </div>
             <div class="flex-container my">
               <amp-img width="884" height="589" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/pres-1.png"></amp-img>
@@ -2155,16 +2243,16 @@ const data = {
             <amp-img width="1776" height="3346" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/branding.png"></amp-img>
           </div>
           <div class="content center-content">
-            <i class="icon icon-zestbank-alt" style="font-size: 10rem"></i>
+            <i class="icon icon-zestbank-full" style="font-size: 10rem"></i>
             <span>Final Logo</span>
           </div>
           <div class="flex-container">
             <span class="fl1 center-content">
-              <i class="icon icon-zestbank" style="font-size: 10rem"></i>
+              <i class="icon icon-zestbank-logo" style="font-size: 10rem"></i>
               <span>Infography Only</span>
             </span>
             <span class="fl1 center-content">
-              <i class="icon icon-zestbank-alt2" style="font-size: 10rem"></i>
+              <i class="icon icon-zestbank-logo-alt" style="font-size: 10rem"></i>
               <span>Simplified Logo</span>
             </span>
           </div>`
@@ -2202,7 +2290,7 @@ const data = {
         {
           title: 'Final Logo',
           content: `<div class="content center-content">
-            <i class="icon icon-zestbank-alt" style="font-size: 10rem; color: #F87C00"></i>
+            <i class="icon icon-zestbank-full" style="font-size: 10rem; color: #F87C00"></i>
             <span>Final Logo</span>
           </div>`
         },
@@ -2238,13 +2326,14 @@ const data = {
       key: 'NDG',
       title: 'Nescafe Dolce Gusto Webstore',
       description: 'E-commerce website to order your coffee pods & machines',
+      top: '/resources/img/projects/NDG/top.jpg',
       fullDescription: `<span>
         Reinventing the e-commerce coffee experience.<br/>
         This website offers tons of cofee varieties as well as coffee machines.<br/>
         It presents also the Nescafe-style coffee grinding.
       </span>`,
       wip: false,
-      icon: 'icon icon-dolcegusto-alt2',
+      icon: 'icon icon-dolcegusto-logo',
       color: '#653800',
       lighten: '#cb7100',
       darken: '#321c00',
@@ -2254,31 +2343,31 @@ const data = {
       dribbbleProject: 1988820,
       links: [
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/dolce-gusto-webstore',
           title: 'GitHub'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/1988820-Nescafe-Dolce-Gusto-Webstore',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-django-alt',
+          icon: 'icon icon-django-logo',
           title: 'Django'
         },
         {
-          icon: 'icon icon-sqlite',
+          icon: 'icon icon-sqlite-logo',
           title: 'SQLite'
         },
         {
-          icon: 'icon icon-react',
+          icon: 'icon icon-react-logo',
           title: 'React'
         },
         {
-          icon: 'icon icon-materialui',
+          icon: 'icon icon-materialui-logo',
           title: 'Material UI'
         }
       ],
@@ -2286,7 +2375,7 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content my">
-              <i class="icon icon-dolcegusto" style="font-size: 8rem; color: #663700"></i>
+              <i class="icon icon-dolcegusto-logo" style="font-size: 8rem; color: #663700"></i>
           </div>
           <div class="flex-container my">
             <amp-img width="1280" height="934" layout="responsive" class="w-100 fl1" src="/resources/img/projects/NDG/pres-1.jpg"></amp-img>
@@ -2302,16 +2391,16 @@ const data = {
         {
           title: 'Branding',
           content: `<div class="content my center-content">
-            <i class="icon icon-dolcegusto" style="font-size: 10rem"></i>
+            <i class="icon icon-dolcegusto-full" style="font-size: 10rem"></i>
             <span>Official Nescafé Dolce Gusto Logo</span>
           </div>
           <div class="flex-container my">
             <span class="fl1 center-content">
-              <i class="icon icon-dolcegusto-alt" style="font-size: 10rem"></i>
+              <i class="icon icon-dolcegusto-full-alt" style="font-size: 10rem"></i>
               <span>Simplified Logo</span>
             </span>
             <span class="fl1 center-content my">
-              <i class="icon icon-dolcegusto-alt2" style="font-size: 10rem"></i>
+              <i class="icon icon-dolcegusto-logo" style="font-size: 10rem"></i>
               <span>Super-simplified logo</span>
             </span>
           </div>`
@@ -2378,7 +2467,7 @@ const data = {
               <span>Website icons built using Webpack<span class="ssub d-block">Custom Font - 11 icons</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-materialui"></i></span>
+              <span class="indicator"><i class="icon icon-materialui-logo"></i></span>
               <span>Website icons<span class="ssub d-block">MaterialUI Icons</span></span>
             </div>
           </div>`
@@ -2386,7 +2475,7 @@ const data = {
         {
           title: 'Final Logo',
           content: `<div class="center-content">
-            <i class="icon icon-dolcegusto-alt2" style="color: #663700; font-size: 5rem"></i>
+            <i class="icon icon-dolcegusto-full" style="color: #663700; font-size: 5rem"></i>
           </div>`
         },
         {
@@ -2399,23 +2488,23 @@ const data = {
           title: 'Technologies',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-react"></i></span>
+              <span class="indicator"><i class="icon icon-react-logo"></i></span>
               <span>React<span class="ssub d-block">JS library to built user interfaces</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-django-alt"></i></span>
+              <span class="indicator"><i class="icon icon-django-logo"></i></span>
               <span>Django<span class="ssub d-block">High-level Python framework for web</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-sqlite"></i></span>
+              <span class="indicator"><i class="icon icon-sqlite-logo"></i></span>
               <span>SQLite<span class="ssub d-block">File-based relational database</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-materialui"></i></span>
+              <span class="indicator"><i class="icon icon-materialui-logo"></i></span>
               <span>Material UI<span class="ssub d-block">Popular React UI Framework</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-sass-alt"></i></span>
+              <span class="indicator"><i class="icon icon-sass-logo"></i></span>
               <span>Sass<span class="ssub d-block">Powerful and stable CSS</span></span>
             </div>
           </div>`
@@ -2544,13 +2633,14 @@ const data = {
       key: 'LO',
       title: 'LogTrack',
       description: 'Complex Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...',
+      top: '/resources/img/projects/LO/top.jpg',
       fullDescription: `<span>
         Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>
         Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>
         Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.
       </span>`,
       wip: true,
-      icon: 'icon icon-logtrack',
+      icon: 'icon icon-logtrack-logo',
       color: '#113885',
       lighten: '#1d5edf',
       darken: '#05122b',
@@ -2560,7 +2650,7 @@ const data = {
       dribbbleProject: 2016530,
       links: [
         {
-          icon: 'icon icon-github',
+          icon: 'icon icon-github-logo',
           link: 'https://github.com/bchoubert/logistics',
           title: 'GitHub'
         },
@@ -2570,26 +2660,26 @@ const data = {
           title: 'Live Version'
         },
         {
-          icon: 'icon icon-dribbble',
+          icon: 'icon icon-dribbble-logo',
           link: 'https://dribbble.com/bchoubert/projects/2016530-LogTrack',
           title: 'Dribbble Project'
         }
       ],
       technologies: [
         {
-          icon: 'icon icon-firebase',
+          icon: 'icon icon-firebase-logo-alt',
           title: 'Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions'
         },
         {
-          icon: 'icon icon-react',
+          icon: 'icon icon-react-logo',
           title: 'React'
         },
         {
-          icon: 'icon icon-openlayers',
+          icon: 'icon icon-openlayers-logo',
           title: 'OpenLayers'
         },
         {
-          icon: 'icon icon-sass-alt',
+          icon: 'icon icon-sass-logo',
           title: 'Sass'
         }
       ],
@@ -2597,7 +2687,7 @@ const data = {
         {
           title: 'Presentation',
           content: `<div class="content center-content my">
-            <i class="icon icon-logtrack-alt" style="font-size: 15rem; color: #E4E4E4"></i>
+            <i class="icon icon-logtrack-full" style="font-size: 15rem; color: #E4E4E4"></i>
           </div>
           <div class="flex-container my">
             <amp-img width="3300" height="2475" layout="responsive" class="w-100 fl1" src="/resources/img/projects/LO/pres-1.png"></amp-img>
@@ -2619,27 +2709,27 @@ const data = {
         {
           title: 'Original Branding',
           content: `<div class="content center-content my">
-            <i class="icon icon-logistics-alt" style="color: #E4E4E4; font-size: 12rem"></i>
+            <i class="icon icon-logistics-full" style="color: #E4E4E4; font-size: 12rem"></i>
             <span class="my">Project full-size Logo</span>
           </div>
           <div class="content center-content my">
-            <i class="icon icon-logistics" style="color: #E4E4E4; font-size: 8rem"></i>
+            <i class="icon icon-logistics-logo" style="color: #E4E4E4; font-size: 8rem"></i>
             <span class="my">Simplified Logo</span>
           </div>`
         },
         {
           title: 'Re-Branding',
           content: `<div class="content center-content my">
-            <i class="icon icon-logtrack-alt" style="color: #E4E4E4; font-size: 30rem"></i>
+            <i class="icon icon-logtrack-full" style="color: #E4E4E4; font-size: 30rem"></i>
             <span class="my">Project full-size Logo</span>
           </div>
           <div class="flex-container my">
             <div class="content center-content my">
-              <i class="icon icon-logtrack" style="color: #E4E4E4; font-size: 10rem"></i>
+              <i class="icon icon-logtrack-logo" style="color: #E4E4E4; font-size: 10rem"></i>
               <span class="my">Simplified Logo</span>
             </div>
             <div class="content center-content my">
-              <i class="icon icon-logtrack-alt2" style="color: #E4E4E4; font-size: 20rem"></i>
+              <i class="icon icon-logtrack-full-alt" style="color: #E4E4E4; font-size: 20rem"></i>
               <span class="my">Full-size website Logo</span>
             </div>
           </div>`
@@ -3008,22 +3098,22 @@ const data = {
           title: 'Technologies',
           content: `<div class="content">
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-react"></i></span>
+              <span class="indicator"><i class="icon icon-react-logo"></i></span>
               <span>React<span class="d-block ssub">JS library to built user interfaces</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-firebase"></i></span>
+              <span class="indicator"><i class="icon icon-firebase-logo-alt"></i></span>
               <span>Firebase<span class="d-block ssub">Online database, authentication and storage.<br/>
                 For the moment, are used: Firestore (document-based database), authentication (user signin, signup and sign out), storage (file storage, user spaced) and functions (processes on database and storage).<br/>
                 Every service provided by Firebase has a full layer of security that provides interesting capabilities to limit users' rights.<br/>
                 It is planned to use Firebase Real-Time database for chat messages and alerts. That's not the case at the moment.</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-openlayers"></i></span>
+              <span class="indicator"><i class="icon icon-openlayers-logo"></i></span>
               <span>OpenLayers<span class="d-block ssub">Open-source JavaScript library for displaying maps</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-sass-alt"></i></span>
+              <span class="indicator"><i class="icon icon-sass-logo"></i></span>
               <span>Sass<span class="d-block ssub">CSS, more flexible and powerful</span></span>
             </div>
           </div>`
@@ -3032,7 +3122,7 @@ const data = {
           title: 'APIs',
           content: `<div class="content">
             <div class="indicator-parent">
-              <span class="indicator"><i class="icon icon-openweather"></i></span>
+              <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
               <span>OpenWeather<span class="d-block ssub">This API is used to fetch the current weather at user's location.<br/>
                 To limit API calls, the weather is cached into Firestore (Firebase database) and is fetched only through the API if the user's location has not been fetched yet,<br/>
                 or if the weather is out-of-date.</span></span>
@@ -3043,7 +3133,7 @@ const data = {
           title: 'Routing',
           content: `<div class="content">
             <div class="indicator-parent">
-              <span class="indicator"><i class="icon icon-react"></i></span>
+              <span class="indicator"><i class="icon icon-react-logo"></i></span>
               <span>React Router DOM
                 <span class="d-block ssub">Famous Router for React<br/>
                   This router provides the Route class to be used for every endpoint of the app.<br/>
@@ -3060,7 +3150,7 @@ const data = {
           title: 'Real-Time data',
           content: `<div class="content">
             <div class="indicator-parent">
-              <span class="indicator"><i class="icon icon-firebase"></i></span>
+              <span class="indicator"><i class="icon icon-firebase-logo-alt"></i></span>
               <span>Firebase provides an efficient way to real-time updates.<br/>
                 Real-Time is a way to register a listener function that will be called each time data is modified.<br/>
                 With Firebase Real-Time database, you can register a query that will call a callback everytime results are different.<br/><br/>
@@ -3073,7 +3163,7 @@ const data = {
           title: 'Map',
           content: `<div class="content">
             <div class="indicator-parent">
-              <span class="indicator"><i class="icon icon-openlayers"></i></span>
+              <span class="indicator"><i class="icon icon-openlayers-logo"></i></span>
               <span>A map component that uses OpenWeather is part of the app. Used in several screens, it needs to be intialized via reference.<br/>
               It provides numerous functions to manage the center, zoom and heading of the map, as well as map features (markers, lines, shapes drawn on top of it, along with their popups)</span>
             </div>
@@ -3112,7 +3202,7 @@ const data = {
                 This service provides a way to upload files to his user space.</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-firebase"></i></span>
+              <span class="indicator"><i class="icon icon-firebase-logo-alt"></i></span>
               <span>FirebaseService<span class="ssub d-block">This service is used to initialize global Firebase objects, as well as providing user authentication functions.</span></span>
             </div>
             <div class="indicator-parent my">
@@ -3156,7 +3246,7 @@ const data = {
               <span>UtilsService<span class="ssub d-block">More utility functions to manage arrays, JS events and strings.</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-openweather"></i></span>
+              <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
               <span>WeatherService<span class="ssub d-block">Used to interact with OpenWeather API endpoints to get the weather at user's location.</span></span>
             </div>
           </div>`
@@ -3210,15 +3300,15 @@ const data = {
       expertise: true,
       technologies: [
         {
-          icon: 'icon icon-css-alt',
+          icon: 'icon icon-css-logo',
           title: 'CSS (Sass, Less, BEM)'
         },
         {
-          icon: 'icon icon-javascript-alt',
+          icon: 'icon icon-javascript-logo-alt',
           title: 'JavaScript, TypeScript, React, Angular, Vue, Svelte'
         },
         {
-          icon: 'icon icon-bootstrap',
+          icon: 'icon icon-bootstrap-logo',
           title: 'Bootstrap, MDBootstrap, Material UI, PureCSS'
         },
         {
@@ -3242,20 +3332,24 @@ const data = {
       expertise: true,
       technologies: [
         {
-          icon: 'icon icon-java',
-          title: 'Java, Spring, EE, JNI'
+          icon: 'icon icon-javascript-logo-alt',
+          title: 'NodeJS, Express, Adonis, NestJS'
         },
         {
-          icon: 'icon icon-php',
+          icon: 'icon icon-java-logo',
+          title: 'Java, Spring'
+        },
+        {
+          icon: 'icon icon-php-logo',
           title: 'PHP, Symfony, Laravel'
         },
         {
-          icon: 'icon icon-python',
+          icon: 'icon icon-python-logo',
           title: 'Python, Flask, Django'
         },
         {
-          icon: 'icon icon-firebase',
-          title: 'Firebase Authentication, Storage, Functions, Rules'
+          icon: 'icon icon-firebase-logo-alt',
+          title: 'Firebase'
         }
       ],
       list: [
@@ -3272,31 +3366,31 @@ const data = {
       expertise: true,
       technologies: [
         {
-          icon: 'icon icon-xd',
+          icon: 'icon icon-xd-logo',
           title: 'Adobe Xd'
         },
         {
-          icon: 'icon icon-protoio-alt',
+          icon: 'icon icon-protoio-logo',
           title: 'ProtoIO'
         },
         {
-          icon: 'icon icon-poweruser',
+          icon: 'icon icon-poweruser-logo',
           title: 'Power User'
         },
         {
-          icon: 'icon icon-inkscape',
+          icon: 'icon icon-inkscape-logo',
           title: 'Inkscape'
         },
         {
-          icon: 'icon icon-affinity-photo',
+          icon: 'icon icon-affinity-photo-logo',
           title: 'Affinity Photo'
         },
         {
-          icon: 'icon icon-affinity-designer',
+          icon: 'icon icon-affinity-designer-logo',
           title: 'Affinity Designer'
         },
         {
-          icon: 'icon icon-gimp',
+          icon: 'icon icon-gimp-logo',
           title: 'Gimp'
         },
         {
@@ -3332,35 +3426,35 @@ const data = {
       expertise: false,
       technologies: [
         {
-          icon: 'icon icon-mysql',
+          icon: 'icon icon-mysql-logo',
           title: 'MySQL'
         },
         {
-          icon: 'icon icon-oracle',
+          icon: 'icon icon-oracle-logo',
           title: 'Oracle'
         },
         {
-          icon: 'icon icon-hfsql-alt',
+          icon: 'icon icon-hfsql-logo',
           title: 'HFSQL'
         },
         {
-          icon: 'icon icon-mongodb',
+          icon: 'icon icon-mongodb-logo',
           title: 'MondoDB'
         },
         {
-          icon: 'icon icon-redis',
+          icon: 'icon icon-redis-logo',
           title: 'Redis'
         },
         {
-          icon: 'icon icon-postgre',
-          title: 'Postgre'
+          icon: 'icon icon-postgre-logo',
+          title: 'PostgreSQL'
         },
         {
-          icon: 'icon icon-sqlite',
+          icon: 'icon icon-sqlite-logo',
           title: 'SQLite'
         },
         {
-          icon: 'icon icon-firebase',
+          icon: 'icon icon-firebase-logo-alt',
           title: 'Firebase Real-Time & Firestore'
         }
       ]
@@ -3372,23 +3466,23 @@ const data = {
       expertise: false,
       technologies: [
         {
-          icon: 'icon icon-apache',
+          icon: 'icon icon-apache-logo',
           title: 'Apache'
         },
         {
-          icon: 'icon icon-tomcat',
+          icon: 'icon icon-tomcat-logo',
           title: 'Tomcat'
         },
         {
-          icon: 'icon icon-lets-encrypt',
+          icon: 'icon icon-lets-encrypt-logo',
           title: 'Let\'s Encrypt'
         },
         {
-          icon: 'icon icon-google-cloud',
+          icon: 'icon icon-google-cloud-logo',
           title: 'Google Cloud'
         },
         {
-          icon: 'icon icon-aws',
+          icon: 'icon icon-aws-logo',
           title: 'AWS'
         }
       ]
@@ -3400,19 +3494,19 @@ const data = {
       expertise: false,
       technologies: [
         {
-          icon: 'icon icon-hadoop',
+          icon: 'icon icon-hadoop-logo',
           title: 'Hadoop'
         },
         {
-          icon: 'icon icon-mapreduce',
+          icon: 'icon icon-mapreduce-logo',
           title: 'MapReduce'
         },
         {
-          icon: 'icon icon-qliksense',
+          icon: 'icon icon-qliksense-logo',
           title: 'QlikSense'
         },
         {
-          icon: 'icon icon-qlikview',
+          icon: 'icon icon-qlikview-logo',
           title: 'QlikView'
         }
       ]
@@ -3424,15 +3518,15 @@ const data = {
       expertise: false,
       technologies: [
         {
-          icon: 'icon icon-android',
+          icon: 'icon icon-android-logo',
           title: 'Android'
         },
         {
-          icon: 'icon icon-react-native',
+          icon: 'icon icon-react-native-logo',
           title: 'React Native'
         },
         {
-          icon: 'icon icon-expo',
+          icon: 'icon icon-expo-logo',
           title: 'Expo'
         }
       ]

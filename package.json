@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "node src/index.js BUILD",
-    "copy": "node src/index.js COPY"
+    "copy": "node src/index.js COPY",
+    "serve": "http-server dist/ -o"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,12 @@
   },
   "homepage": "https://github.com/bchoubert/chbe-website-7#readme",
   "devDependencies": {
+    "http-server": "^0.12.3",
     "ncp": "^2.0.0",
     "pug": "^3.0.0"
   },
   "dependencies": {
-    "bc-font": "^1.8.4"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bc-font": "^2.3.2"
   }
 }
