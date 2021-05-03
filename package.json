@@ -21,7 +21,7 @@
   "devDependencies": {
     "http-server": "^0.12.3",
     "ncp": "^2.0.0",
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
