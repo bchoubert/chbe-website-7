@@ -344,7 +344,7 @@ const data = {
         }
       ],
       tasks: [
-        'Setuped and improved E2E, unit and component testing processes',
+        'Improved E2E, unit and Set up component testing processes',
         'Developped reusable and standardized complex components',
         'Enhanced performance using Redux, custom hooks and best practices',
         'Participated in UI/UX reviews and technical design',
@@ -352,7 +352,7 @@ const data = {
       ],
       mainTechnologies: [
         {
-          icon: 'icon icon-javascript-logo-alt',
+          icon: 'icon icon-nest-logo',
           title: 'NodeJS / NestJS'
         },
         {
@@ -368,7 +368,7 @@ const data = {
           title: 'PostgreSQL'
         },
         {
-          icon: 'icon icon-typescript-logo',
+          icon: 'icon icon-typescript-logo-alt',
           title: 'TypeScript'
         },
         {
@@ -544,7 +544,7 @@ const data = {
           title: 'Python'
         },
         {
-          icon: 'icon icon-typescript-logo',
+          icon: 'icon icon-typescript-logo-alt',
           title: 'TypeScript'
         }
       ],
@@ -1025,7 +1025,7 @@ const data = {
           title: 'Expo'
         },
         {
-          icon: 'icon icon-typescript-logo',
+          icon: 'icon icon-typescript-logo-alt',
           title: 'TypeScript'
         }
       ],
@@ -1169,7 +1169,7 @@ const data = {
               <span>React Native<span class="ssub d-block">A good framework for cross-platform apps</span></span>
             </div>
             <div class="indicator-parent my">
-              <span class="indicator"><i class="icon icon-typescript-logo"></i></span>
+              <span class="indicator"><i class="icon icon-typescript-logo-alt"></i></span>
               <span>TypeScript<span class="ssub d-block">Strongly typed apps</span></span>
             </div>
             <div class="indicator-parent my">
