@@ -1,9 +1,10 @@
 :root {
-  --text: #E4E4E4;
-  --theme: #181818;
-  --theme-light: #232323;
+  --text: #232323;
+  --theme: #F8F7FD;
+  --theme-light: #FFFFFF;
   --pink: #EDA2C3;
   --purple: #081F3F;
+  --radius: .7rem;
 }
 
 body {
@@ -92,6 +93,7 @@ img[lightbox], amp-img[lightbox] {
 }
 
 .btn:hover b {
+  color: var(--theme-light);
   width: calc(100% + 4px);
 }
 
@@ -382,6 +384,7 @@ amp-list.with-custom-loader .amp-active > div {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--theme-light);
+  border-radius: var(--radius);
 }
 
 .card-content {
@@ -533,6 +536,8 @@ nav.card, footer.card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color .25s;
+  transition: color .25s;
 }
 
 .nav-link i {
@@ -559,6 +564,10 @@ nav.card, footer.card {
   height: 100%;
 }
 
+.nav-link:hover a {
+  color: var(--theme-light);
+}
+
 .nav-placeholder {
   display: block;
   width: 100%;
@@ -567,8 +576,8 @@ nav.card, footer.card {
 
 .nav-container {
   width: calc(100% - 4rem);
-  padding: 2rem 0 1rem 0;
   background-color: var(--theme);
+  padding: 2rem 0 1rem 0;
   display: block;
   position: fixed;
   margin-bottom: 1rem;
@@ -654,6 +663,7 @@ footer {
   display: block;
   position: relative;
   margin: 1rem 0 .5rem 0;
+  border-radius: var(--radius);
 }
 
 .square-main {
@@ -673,6 +683,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  color: var(--theme-light);
 }
 
 .square:before {
@@ -682,7 +693,7 @@ footer {
   right: 0;
   height: 4rem;
   width: 4rem;
-  background-color: var(--text);
+  background-color: var(--theme);
 }
 
 header .card-content:first-child {
@@ -847,7 +858,7 @@ form .input-container label {
 form .input-container input:invalid:not(:focus) + label {
   top: 1.9rem;
   left: 1rem;
-  color: var(--theme);
+  color: var(--text);
 }
 
 form .input-line {
@@ -888,7 +899,7 @@ form .textarea-container label {
 form .textarea-container textarea:invalid:not(:focus) + label {
   top: 1.9rem;
   left: 1rem;
-  color: var(--theme);
+  color: var(--text);
 }
 
 form input#email, form input#name, form textarea {
