@@ -1,9 +1,10 @@
 :root {
-  --text: #E4E4E4;
-  --theme: #181818;
-  --theme-light: #232323;
+  --text: #232323;
+  --theme: #F8F7FD;
+  --theme-light: #FFFFFF;
   --pink: #EDA2C3;
   --purple: #081F3F;
+  --radius: .7rem;
 }
 
 body {
@@ -80,6 +81,7 @@ img, amp-img {
 
   &:hover {
     b {
+      color: var(--theme-light);
       width: calc(100% + 4px);
     }
   }
@@ -292,6 +294,7 @@ amp-list {
   display: flex;
   flex-direction: column;
   background-color: var(--theme-light);
+  border-radius: var(--radius);
 
   &-content {
     padding: 2rem;
@@ -408,6 +411,7 @@ nav.card, footer.card {
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      transition: color .25s;
     }
 
     i {
@@ -430,6 +434,10 @@ nav.card, footer.card {
       b {
         height: 100%;
       }
+
+      a {
+        color: var(--theme-light);
+      }
     }
   }
 
@@ -441,8 +449,8 @@ nav.card, footer.card {
 
   &-container {
     width: calc(100% - 4rem);
-    padding: 2rem 0 1rem 0;
     background-color: var(--theme);
+    padding: 2rem 0 1rem 0;
     display: block;
     position: fixed;
     margin-bottom: 1rem;
@@ -501,6 +509,7 @@ footer {
   display: block;
   position: relative;
   margin: 1rem 0 .5rem 0;
+  border-radius: var(--radius);
 
   &-main {
     position: absolute;
@@ -513,6 +522,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    color: var(--theme-light);
   }
 
   &:before {
@@ -522,7 +532,7 @@ footer {
     right: 0;
     height: 4rem;
     width: 4rem;
-    background-color: var(--text);
+    background-color: var(--theme);
   }
 }
 
@@ -672,7 +682,7 @@ form {
         & + label {
           top: 1.9rem;
           left: 1rem;
-          color: var(--theme);
+          color: var(--text);
         }
       }
     }
@@ -704,7 +714,7 @@ form {
       & + label {
         top: 1.9rem;
         left: 1rem;
-        color: var(--theme);
+        color: var(--text);
       }
     }
   }
